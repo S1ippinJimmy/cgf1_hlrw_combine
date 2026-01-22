@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<BackstoryDef>
+		<defName>CGF1_HLRW_Backstory_Combine_Transhuman_Child</defName>
+		<slot>Childhood</slot>
+		<title>unknown</title>
+		<titleShort>unknown</titleShort>
+		<baseDesc>As [PAWN_nameDef] is a transhuman organism captured and subdued by the Combine, with [PAWN_possessive] basic identity completely erased via brainwashing, little is known about [PAWN_possessive] childhood.</baseDesc>
+		<workDisables>Social</workDisables>
+		<requiredWorkTags>Violent</requiredWorkTags>
+		<spawnCategories>
+			<li>CGF1_HLRW_Backstory_Combine_Transhuman</li>
+		</spawnCategories>
+		<bodyTypeGlobal>Male</bodyTypeGlobal>
+		<bodyTypeFemale>Male</bodyTypeFemale>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<shuffleable>True</shuffleable>
+	</BackstoryDef>
+	
+	<BackstoryDef>
+		<defName>CGF1_HLRW_Backstory_Combine_Grunt_Adult</defName>
+		<slot>Adulthood</slot>
+		<title>combine grunt</title>
+		<titleShort>grunt</titleShort>
+		<baseDesc>Having been captured by or voluntarily submitted to the Combine at some point in the past, [PAWN_nameDef] was once a normal human with a name and identity. Subjected to moderate surgical augmentation, basic cybernetic implants, and relentless mental conditioning, [PAWN_nameDef] was transformed into a Grunt-class infantry operative. Though some human traits remain, most of [PAWN_possessive] former self was suppressed beneath layers of obedience and control.</baseDesc>
+		<workDisables>Social</workDisables>
+		<requiredWorkTags>Violent</requiredWorkTags>
+		<spawnCategories>
+			<li>CGF1_HLRW_Backstory_Combine_Grunt</li>
+		</spawnCategories>
+		<bodyTypeGlobal>Male</bodyTypeGlobal>
+		<bodyTypeFemale>Male</bodyTypeFemale>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<shuffleable>True</shuffleable>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>CGF1_HLRW_Backstory_Combine_Soldier_Adult</defName>
+		<slot>Adulthood</slot>
+		<title>combine soldier</title>
+		<titleShort>soldier</titleShort>
+		<baseDesc>Having been captured by or voluntarily submitted to the Combine at some point in the past, [PAWN_nameDef] was once a normal human with a name and identity. [PAWN_nameDef] was subjected to a variety of invasive surgical procedures and aggressive brainwashing, destroying most physical and mental semblances of humanity [PAWN_possessive] possessed beforehand.</baseDesc>
+		<workDisables>Social</workDisables>
+		<requiredWorkTags>Violent</requiredWorkTags>
+		<spawnCategories>
+			<li>CGF1_HLRW_Backstory_Combine_Soldier</li>
+		</spawnCategories>
+		<bodyTypeGlobal>Male</bodyTypeGlobal>
+		<bodyTypeFemale>Male</bodyTypeFemale>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<shuffleable>True</shuffleable>
+	</BackstoryDef>
+	
+	<BackstoryDef>
+		<defName>CGF1_HLRW_Backstory_Combine_Ordinal_Adult</defName>
+		<slot>Adulthood</slot>
+		<title>combine ordinal</title>
+		<titleShort>ordinal</titleShort>
+		<baseDesc>Having been captured by or voluntarily submitted to the Combine at some point in the past, [PAWN_nameDef] was once a normal human with a name and identity. Selected for field command duties, [PAWN_nameDef] underwent standard transhuman conversion followed by neural augmentation, tactical integration implants, and chain-of-command conditioning. Designated as an Ordinal-class overseer, [PAWN_pronoun] acted as a combat coordinator and squad-level enforcer. Whatever identity [PAWN_possessive] once had was suppressed beneath layers of behavioral programming and Combine protocol.</baseDesc>
+		<workDisables>Social</workDisables>
+		<requiredWorkTags>Violent</requiredWorkTags>
+		<spawnCategories>
+			<li>CGF1_HLRW_Backstory_Combine_Ordinal</li>
+		</spawnCategories>
+		<bodyTypeGlobal>Male</bodyTypeGlobal>
+		<bodyTypeFemale>Male</bodyTypeFemale>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<shuffleable>True</shuffleable>
+	</BackstoryDef>
+	
+	<BackstoryDef>
+		<defName>CGF1_HLRW_Backstory_Combine_Elite_Adult</defName>
+		<slot>Adulthood</slot>
+		<title>combine elite</title>
+		<titleShort>elite</titleShort>
+		<baseDesc>Having been captured by or voluntarily submitted to the Combine at some point in the past, [PAWN_nameDef] was once a normal human with a name and identity. Selected for elite Overwatch integration, [PAWN_nameDef] underwent extensive transhuman conditioning, cortical remapping, and combat optimization. Outfitted with advanced armor and armed with Combine pulse technology, [PAWN_pronoun] became one of the regime’s most formidable enforcers. Whatever remained of [PAWN_possessive] former self was erased in the process.</baseDesc>
+		<workDisables>Social</workDisables>
+		<requiredWorkTags>Violent</requiredWorkTags>
+		<spawnCategories>
+			<li>CGF1_HLRW_Backstory_Combine_Elite</li>
+		</spawnCategories>
+		<bodyTypeGlobal>Male</bodyTypeGlobal>
+		<bodyTypeFemale>Male</bodyTypeFemale>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<shuffleable>True</shuffleable>
+	</BackstoryDef>
+	
+	<BackstoryDef>
+		<defName>CGF1_HLRW_Backstory_Combine_Assassin_Adult</defName>
+		<slot>Adulthood</slot>
+		<title>combine assassin</title>
+		<titleShort>assassin</titleShort>
+		<baseDesc>Having been captured by or voluntarily submitted to the Combine at some point in the past, [PAWN_nameDef] was once a normal human with a name and identity. Now repurposed into an elite Assassin-class operative, [PAWN_nameDef] underwent extreme cybernetic augmentation, reflex enhancement, and sensory reconditioning. Synthetic musculature and precision targeting implants turned [PAWN_objective] into a swift, silent killer. Aggressive brainwashing erased nearly all traces of humanity [PAWN_possessive] once had.</baseDesc>
+		<workDisables>Social</workDisables>
+		<requiredWorkTags>Violent</requiredWorkTags>
+		<spawnCategories>
+			<li>CGF1_HLRW_Backstory_Combine_Assassin</li>
+		</spawnCategories>
+		<bodyTypeGlobal>Male</bodyTypeGlobal>
+		<bodyTypeFemale>Male</bodyTypeFemale>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<shuffleable>True</shuffleable>
+	</BackstoryDef>
+	
+	<BackstoryDef>
+		<defName>CGF1_HLRW_Backstory_Combine_Suppressor_Adult</defName>
+		<slot>Adulthood</slot>
+		<title>combine suppressor</title>
+		<titleShort>suppressor</titleShort>
+		<baseDesc>Having been captured by or voluntarily submitted to the Combine at some point in the past, [PAWN_nameDef] was once a normal human with a name and identity. Now classified as a Suppressor-type unit, [PAWN_nameDef] was subjected to a variety of invasive surgical procedures, including full-body armor integration, neural targeting enhancements, and weapon-linked sensory conditioning. Aggressive brainwashing destroyed most physical and mental semblances of humanity [PAWN_possessive] possessed beforehand.</baseDesc>
+		<workDisables>Social</workDisables>
+		<requiredWorkTags>Violent</requiredWorkTags>
+		<spawnCategories>
+			<li>CGF1_HLRW_Backstory_Combine_Suppressor</li>
+		</spawnCategories>
+		<bodyTypeGlobal>Male</bodyTypeGlobal>
+		<bodyTypeFemale>Male</bodyTypeFemale>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<shuffleable>True</shuffleable>
+	</BackstoryDef>
+	
+	<BackstoryDef>
+		<defName>CGF1_HLRW_Backstory_Combine_Wallhammer_Adult</defName>
+		<slot>Adulthood</slot>
+		<title>combine charger</title>
+		<titleShort>wallhammer</titleShort>
+		<baseDesc>Having been captured by or voluntarily submitted to the Combine at some point in the past, [PAWN_nameDef] was once a normal human with a name and identity. Now classified as a Wallhammer-type unit, [PAWN_nameDef] was subjected to a variety of invasive surgical procedures, including heavy armor grafting, neural aggression amplification, and the integration of vocal distortion vectors. Aggressive brainwashing further destroyed most physical and mental semblances of humanity [PAWN_possessive] possessed beforehand.</baseDesc>
+		<workDisables>Social</workDisables>
+		<requiredWorkTags>Violent</requiredWorkTags>
+		<spawnCategories>
+			<li>CGF1_HLRW_Backstory_Combine_Wallhammer</li>
+		</spawnCategories>
+		<bodyTypeGlobal>Male</bodyTypeGlobal>
+		<bodyTypeFemale>Male</bodyTypeFemale>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<shuffleable>True</shuffleable>
+	</BackstoryDef>
+
+</Defs>

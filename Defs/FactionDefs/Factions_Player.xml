@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<FactionDef ParentName="PlayerFactionBase">
+		<defName>CGF1_HLRW_Faction_PlayerCombine</defName>
+		<label>combine unit</label>
+		<description>A combine unit.</description>
+		<isPlayer>true</isPlayer>
+		<basicMemberKind>CGF1_HLRW_Combine_Soldier_Player</basicMemberKind>
+		<pawnSingular>soldier</pawnSingular>
+		<pawnsPlural>soldiers</pawnsPlural>
+		<techLevel>Ultra</techLevel>
+		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
+		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+		<allowedCultures><li>Astropolitan</li></allowedCultures>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>CGF1_HLRW_Backstory_Combine_Transhuman</li>
+					<li>CGF1_HLRW_Backstory_Combine_Soldier</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+		<!--<permanentEnemyToEveryoneExcept>
+			<li>CGF1_HLRW_Faction_Combine</li>
+		</permanentEnemyToEveryoneExcept>-->
+		<factionIconPath>World/WorldObjects/Expanding/Town</factionIconPath>
+		<startingResearchTags>
+			<li>ClassicStart</li>
+		</startingResearchTags>
+		<startingTechprintsResearchTags>
+			<li>ClassicStart</li>
+			<li>ClassicStartTechprints</li>
+		</startingTechprintsResearchTags>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>Synthread</li>
+			</thingDefs>
+		</apparelStuffFilter>
+	</FactionDef>
+	
+</Defs>

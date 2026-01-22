@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ResearchTabDef>
+		<defName>CGF1_HLRW_ResearchTab_HLRW</defName>
+		<label>HLRW</label>
+	</ResearchTabDef>	
+	
+	<ResearchProjectDef>
+		<defName>CGF1_HLRW_Research_PulseClassMunitions</defName>
+		<label>pulse-class munitions</label>
+		<description>N/A</description>
+		<baseCost>2000</baseCost>
+		<techLevel>Spacer</techLevel>
+		<tab>CGF1_HLRW_ResearchTab_HLRW</tab>
+		<prerequisites>
+			<li>ChargedShot</li>
+		</prerequisites>
+		<researchViewX>0</researchViewX>
+		<researchViewY>1</researchViewY>
+		<generalRules>
+			<rulesStrings>
+				<li>subject->pulse-class munitions</li>
+
+				<li>subject_story->studied dark energy processes at a secret desert laboratory</li>
+				<li>subject_story->killed an elite Combine soldier and stole the soldier's AR2</li>
+				<li>subject_story->learned how to imbibe ammunition with dark energy, increasing its lethality</li>
+
+				<li>subject_gerund->constructing pulse munitions</li>
+				<li>subject_gerund->utilising pulse munitions</li>
+			</rulesStrings>
+		</generalRules>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>CGF1_HLRW_Research_BasicCombineArmor</defName>
+		<label>Combine armor</label>
+		<description>N/A</description>
+		<baseCost>3000</baseCost>
+		<techLevel>Spacer</techLevel>
+		<tab>CGF1_HLRW_ResearchTab_HLRW</tab>
+		<prerequisites>
+			<li>ReconArmor</li>
+		</prerequisites>
+		<researchViewX>1</researchViewX>
+		<researchViewY>1</researchViewY>
+		<generalRules>
+			<rulesStrings>
+				<li>subject->combine armor</li>
+
+				<li>subject_story->found the desiccated corpse of a Combine unit and took apart the body armor</li>
+				<li>subject_story->enlisted in the ranks of the Combine to get a close look at the soldiers</li>
+
+				<li>subject_gerund->constructing combine armor</li>
+				<li>subject_gerund->utilising combine armor</li>
+			</rulesStrings>
+		</generalRules>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>CGF1_HLRW_Research_AdvancedCombineArmor</defName>
+		<label>advanced Combine armor</label>
+		<description>N/A</description>
+		<baseCost>3000</baseCost>
+		<techLevel>Spacer</techLevel>
+		<tab>CGF1_HLRW_ResearchTab_HLRW</tab>
+		<prerequisites>
+			<li>PoweredArmor</li>
+			<li>CGF1_HLRW_Research_BasicCombineArmor</li>
+		</prerequisites>
+		<researchViewX>2</researchViewX>
+		<researchViewY>1</researchViewY>
+		<generalRules>
+			<rulesStrings>
+				<li>subject->advanced combine armor</li>
+
+				<li>subject_story->found the desiccated corpse of an elite Combine unit and took apart the body armor</li>
+				<li>subject_story->enlisted in the ranks of the Combine to get a close look at the assassin units</li>
+
+				<li>subject_gerund->constructing elite combine armor</li>
+				<li>subject_gerund->utilising elite combine armor</li>
+			</rulesStrings>
+		</generalRules>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>CGF1_HLRW_Research_CombineFabrication</defName>
+		<label>Combine fabrication</label>
+		<description>N/A</description>
+		<baseCost>2000</baseCost>
+		<techLevel>Ultra</techLevel>
+		<tab>CGF1_HLRW_ResearchTab_HLRW</tab>
+		<prerequisites>
+			<li>Fabrication</li>
+		</prerequisites>
+		<researchViewX>0</researchViewX>
+		<researchViewY>2</researchViewY>
+	</ResearchProjectDef>
+	
+	<!--
+	<ResearchProjectDef>
+		<defName>CGF1_HLRW_Research_CombineStructures</defName>
+		<label>Combine structures</label>
+		<description>N/A</description>
+		<baseCost>2000</baseCost>
+		<techLevel>Ultra</techLevel>
+		<tab>CGF1_HLRW_ResearchTab_HLRW</tab>
+		<prerequisites>
+			<li>Fabrication</li>
+		</prerequisites>
+		<researchViewX>0</researchViewX>
+		<researchViewY>2</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>CGF1_HLRW_Research_ForcefieldDoor</defName>
+		<label>forcefield door</label>
+		<description>N/A</description>
+		<baseCost>2000</baseCost>
+		<techLevel>Ultra</techLevel>
+		<tab>CGF1_HLRW_ResearchTab_HLRW</tab>
+		<prerequisites>
+			<li>Fabrication</li>
+			<li>CGF1_HLRW_Research_ForcefieldDoor</li>
+		</prerequisites>
+		<researchViewX>1</researchViewX>
+		<researchViewY>2</researchViewY>
+	</ResearchProjectDef>-->
+
+</Defs>

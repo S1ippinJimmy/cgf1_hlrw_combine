@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--<ThingDef ParentName="ResourceBase">
+		<defName>CGF1_HLRW_Combine_Battery</defName>
+		<label>combine battery</label>
+		<description>A high-output power cell engineered by the Combine. Designed for modular integration into weapons, drones, and field devices, it delivers a steady energy stream with impressive efficiency.</description>
+		<graphicData>
+			<texPath>CGF1/Item/CombineBattery</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<useHitPoints>true</useHitPoints>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<stackLimit>25</stackLimit>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<MarketValue>50</MarketValue>
+			<Mass>0.5</Mass>
+			<Flammability>0.6</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+		<intricate>true</intricate>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+		<burnableByRecipe>false</burnableByRecipe>
+		<allowedArchonexusCount>10</allowedArchonexusCount>
+	</ThingDef>-->
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>CGF1_HLRW_Combine_DarkEnergyOrb</defName>
+		<label>dark energy orb</label>
+		<description>An unstable, high-density energy core used by the Combine to power advanced weaponry and infrastructure. As long as it is properly utilized, it can provide essentially limitless energy; mishandling can be catastrophic.</description>
+		<graphicData>
+			<texPath>CGF1/Item/DarkEnergyOrb</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>0.73</drawSize>
+		</graphicData>
+		<tickerType>Normal</tickerType>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<useHitPoints>true</useHitPoints>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<stackLimit>10</stackLimit>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<MarketValue>440</MarketValue>
+			<Mass>0.4</Mass>
+			<Flammability>0.6</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+		<intricate>true</intricate>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+		<burnableByRecipe>false</burnableByRecipe>
+		<allowedArchonexusCount>10</allowedArchonexusCount>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>4.9</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<explosiveExpandPerStackcount>0.037</explosiveExpandPerStackcount>
+				<startWickOnDamageTaken>
+					<li>Flame</li>
+				</startWickOnDamageTaken>
+				<startWickHitPointsPercent>0.333</startWickHitPointsPercent>
+				<wickTicks>70~150</wickTicks>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<RecipeDef>
+		<defName>CGF1_HLRW_Combine_Recipe_DarkEnergyOrb</defName>
+		<label>make dark energy orb</label>
+		<description>Make a dark energy orb.</description>
+		<jobString>Making dark energy orb.</jobString>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<workAmount>10000</workAmount>
+		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+		<recipeUsers>
+			<li>FabricationBench</li>
+		</recipeUsers>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>ComponentSpacer</li>
+			  </thingDefs>
+			</filter>
+			<count>2</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>CGF1_HLRW_Combine_Alloy</li>
+			  </thingDefs>
+			</filter>
+			<count>10</count>
+		  </li>
+		</ingredients>
+		<fixedIngredientFilter>
+		  <thingDefs>
+			<li>ComponentSpacer</li>
+			<li>CGF1_HLRW_Combine_Alloy</li>
+		  </thingDefs>
+		</fixedIngredientFilter>
+		<products>
+		  <CGF1_HLRW_Combine_DarkEnergyOrb>1</CGF1_HLRW_Combine_DarkEnergyOrb>
+		</products>
+		<researchPrerequisite>CGF1_HLRW_Research_CombineFabrication</researchPrerequisite>
+		<skillRequirements>
+		  <Crafting>5</Crafting>
+		</skillRequirements>
+		<workSkill>Crafting</workSkill>
+    <displayPriority>10</displayPriority>
+	</RecipeDef>
+
+</Defs>

@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>CGF1_HLRW_Combine_Alloy</defName>
+		<label>combex steel</label>
+		<description>An advanced ultratech structural alloy forged by the Combine empire. Combex steel is strong and possesses a distinctive blue hue, but it's heavy and visually unremarkable; Combex steel is built for function, not form.\n\nRoughly 40% plasteel and 60% steel, it is more durable than either, and very cost-efficient for construction. Its resilience to heat makes it ideal for energy-intense weapons, though it has only an average performance when used to create melee weapons and personal armor.</description>
+		<graphicData>
+			<texPath>CGF1/Item/CombineAlloy</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>0.92</drawSize>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<useHitPoints>false</useHitPoints>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<statBases>
+			<MarketValue>5</MarketValue>
+			<Mass>0.75</Mass>
+			<StuffPower_Armor_Sharp>1.06</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>0.5</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Heat>0.60</StuffPower_Armor_Heat>
+			<StuffPower_Insulation_Cold>2</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>2</StuffPower_Insulation_Heat>
+			<SharpDamageMultiplier>1.0</SharpDamageMultiplier>
+			<BluntDamageMultiplier>1.0</BluntDamageMultiplier>
+		</statBases>
+		<thingCategories>
+			<li>ResourcesRaw</li>
+		</thingCategories>
+		<deepCommonality>0</deepCommonality>
+		<burnableByRecipe>false</burnableByRecipe>
+		<smeltable>true</smeltable>
+		<stuffProps>
+			<categories>
+				<li>Metallic</li>
+			</categories>
+			<appearance>Metal</appearance>
+			<commonality>0.05</commonality>
+			<constructEffect>ConstructMetal</constructEffect>
+			<isAirtight>true</isAirtight>
+			<color>(73,86,93)</color>
+			<commonality>0.05</commonality>
+			<soundImpactBullet>BulletImpact_Metal</soundImpactBullet>
+			<soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+			<soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Metal</soundImpactMelee>
+			<statFactors>
+				<MaxHitPoints>3.95</MaxHitPoints>
+				<Flammability>0</Flammability>
+				<WorkToMake>1.65</WorkToMake>
+				<WorkToBuild>1.65</WorkToBuild>
+				<MeleeWeapon_CooldownMultiplier>1.0</MeleeWeapon_CooldownMultiplier>
+			</statFactors>
+		</stuffProps>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<allowedArchonexusCount>100</allowedArchonexusCount>
+	</ThingDef>
+	
+	<RecipeDef>
+		<defName>CGF1_HLRW_Combine_Recipe_CombineAlloy</defName>
+		<label>make combex steel x25</label>
+		<description>Fabricate combex steel.</description>
+		<jobString>Fabricating combex steel.</jobString>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<workAmount>3000</workAmount>
+		<recipeUsers>
+			<li>FabricationBench</li>
+		</recipeUsers>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>Steel</li>
+			  </thingDefs>
+			</filter>
+			<count>15</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>Plasteel</li>
+			  </thingDefs>
+			</filter>
+			<count>10</count>
+		  </li>
+		</ingredients>
+		<fixedIngredientFilter>
+		  <thingDefs>
+			<li>Steel</li>
+			<li>Plasteel</li>
+		  </thingDefs>
+		</fixedIngredientFilter>
+		<products>
+		  <CGF1_HLRW_Combine_Alloy>25</CGF1_HLRW_Combine_Alloy>
+		</products>
+		<researchPrerequisite>CGF1_HLRW_Research_CombineFabrication</researchPrerequisite>
+		<skillRequirements>
+		  <Crafting>5</Crafting>
+		</skillRequirements>
+		<workSkill>Crafting</workSkill>
+		<displayPriority>9</displayPriority>
+	</RecipeDef>
+
+</Defs>

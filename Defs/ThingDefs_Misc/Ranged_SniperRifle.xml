@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>CGF1_HLRW_Combine_SniperRifle_</defName>
+		<label>Combine Sniper Rifle</label>
+		<description>The standard issue pulse sniper rifle for marksman and assassin units of the Combine overwatch.</description>
+		<techLevel>Ultra</techLevel>
+		<graphicData>
+			<texPath>CGF1/Gun/Combine_SniperRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.10</drawSize>
+		</graphicData>
+		<soundInteract>CGF1_MWP_SFX_HLRW_Combine_AR2_Reload</soundInteract>
+		<statBases>
+			<WorkToMake>50000</WorkToMake>
+			<Mass>10</Mass>
+			<AccuracyTouch>0.30</AccuracyTouch>
+			<AccuracyShort>0.45</AccuracyShort>
+			<AccuracyMedium>0.75</AccuracyMedium>
+			<AccuracyLong>0.90</AccuracyLong>
+			<RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>CGF1_HLRW_Research_PulseClassMunitions</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>10</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>FabricationBench</li>
+			</recipeUsers>
+			<displayPriority>200</displayPriority>
+		</recipeMaker>
+		<costList>
+			<CGF1_HLRW_Combine_Alloy>70</CGF1_HLRW_Combine_Alloy>
+			<CGF1_HLRW_Combine_DarkEnergyOrb>1</CGF1_HLRW_Combine_DarkEnergyOrb>
+		</costList>
+		<equippedAngleOffset>40</equippedAngleOffset>
+		<tradeTags>
+			<li>CGF1_HLRW_Combine_Guns</li>
+		</tradeTags>
+		<weaponTags Inherit="False">
+			<li>CGF1_HLRW_Combine_Sniper_Rifle</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>CGF1_HLRW_Bullet_PulseRound_Sniper</defaultProjectile>
+				<warmupTime>3</warmupTime>
+				<range>44.9</range>
+				<soundCast>CGF1_MWP_SFX_HLRW_Combine_Sniper</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>14</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<modExtensions>
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="issaczhuang.muzzleflash">
+				<def>MF_ChargedMuzzleFalsh</def>
+				<drawSize>(1.0,1.0)</drawSize>
+				<offsets>
+					<li>(0.55,0.05)</li>
+				</offsets>
+			</li>
+		</modExtensions>
+		<thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+	</ThingDef>
+	
+</Defs>

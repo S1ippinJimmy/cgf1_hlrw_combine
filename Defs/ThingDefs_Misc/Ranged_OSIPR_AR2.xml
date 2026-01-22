@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>CGF1_HLRW_Combine_OSIPR_AR2_</defName>
+		<label>Combine OSIPR AR2</label>
+		<description>The standard issue rifle of the transhuman arm of the Combine Overwatch, the Overwatch Standard Issue Pulse Rifle (OSIPR) is a fearsome weapon that mixes alien technology into a familiar design.</description>
+		<techLevel>Ultra</techLevel>
+		<graphicData>
+			<texPath>CGF1/Gun/Combine_OSIPR_AR2</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.06</drawSize>
+		</graphicData>
+		<soundInteract>CGF1_MWP_SFX_HLRW_Combine_AR2_Reload</soundInteract>
+		<statBases>
+			<WorkToMake>50000</WorkToMake>
+			<Mass>8</Mass>
+			<AccuracyTouch>0.65</AccuracyTouch>
+			<AccuracyShort>0.75</AccuracyShort>
+			<AccuracyMedium>0.65</AccuracyMedium>
+			<AccuracyLong>0.55</AccuracyLong>
+			<RangedWeapon_Cooldown>1.7</RangedWeapon_Cooldown>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>CGF1_HLRW_Research_PulseClassMunitions</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>FabricationBench</li>
+			</recipeUsers>
+			<displayPriority>200</displayPriority>
+		</recipeMaker>
+		<costList>
+			<CGF1_HLRW_Combine_Alloy>60</CGF1_HLRW_Combine_Alloy>
+			<CGF1_HLRW_Combine_DarkEnergyOrb>1</CGF1_HLRW_Combine_DarkEnergyOrb>
+		</costList>
+		<equippedAngleOffset>40</equippedAngleOffset>
+		<tradeTags>
+			<li>CGF1_HLRW_Combine_Guns</li>
+		</tradeTags>
+		<weaponTags Inherit="False">
+			<li>CGF1_HLRW_Combine_OSIPR_AR2</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>CGF1_HLRW_Bullet_PulseRound</defaultProjectile>
+				<warmupTime>1</warmupTime>
+				<range>30.9</range>
+				<burstShotCount>3</burstShotCount>
+				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+				<soundCast>CGF1_MWP_SFX_HLRW_Combine_AR3</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+				<label>AR2</label>
+				<commandIcon>CGF1/Gun/Combine_OSIPR_AR2</commandIcon>
+			</li>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>CGF1_MWP_Bullet_Combine_Ball</defaultProjectile>
+				<warmupTime>3.5</warmupTime>
+				<range>20.9</range>
+				<forcedMissRadius>0.9</forcedMissRadius>
+				<burstShotCount>1</burstShotCount>
+				<soundAiming>CGF1_MWP_SFX_HLRW_Combine_AR2_GL_Charge</soundAiming>
+				<soundCast>CGF1_MWP_SFX_HLRW_Combine_AR2_GL</soundCast>
+				<soundCastTail>GunTail_Light</soundCastTail>
+				<muzzleFlashScale>2</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<onlyManualCast>true</onlyManualCast>
+				<label>Combine Ball</label>
+				<commandIcon>CGF1/Underbarrel/Combine_AR2_Ball</commandIcon>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<modExtensions>
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="issaczhuang.muzzleflash">
+				<def>MF_ChargedMuzzleFalsh</def>
+				<drawSize>(1.0,1.0)</drawSize>
+				<offsets>
+					<li>(0.48,0.06)</li>
+				</offsets>
+			</li>
+		</modExtensions>
+		<comps>
+			<li Class="MVCF.Comps.CompProperties_VerbProps">
+				<compClass>MVCF.Comps.Comp_VerbProps</compClass>
+				<verbProps>
+					<li>
+						<label>AR2</label>
+						<canBeToggled>true</canBeToggled>
+						<separateToggle>false</separateToggle>
+					</li>
+					<li>
+						<label>Combine Ball</label>
+						<canBeToggled>true</canBeToggled>
+						<separateToggle>false</separateToggle>
+						<description>Launch an electromagnetic, explosive ball of dark energy from the rifle.</description>
+					</li>
+				</verbProps>
+			</li>
+		</comps>
+		<thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+	</ThingDef>
+	
+</Defs>

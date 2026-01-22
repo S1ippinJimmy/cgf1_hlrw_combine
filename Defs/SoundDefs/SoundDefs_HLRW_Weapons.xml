@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	
+	<!-- Reloads -->
+	
+	<SoundDef>
+		<defName>CGF1_MWP_SFX_HLRW_Combine_AR2_Reload</defName>
+		<context>MapOnly</context>
+		<eventNames />  
+		<maxSimultaneous>1</maxSimultaneous>  
+		<subSounds>
+			<li>
+				<name>Shot</name>
+				<grains>
+					<li Class="AudioGrain_Clip">
+					<clipPath>Weapons_CGF1/HLRW/ar2_reload</clipPath>
+					</li>
+				</grains>      
+				<volumeRange>40</volumeRange>   
+				<pitchRange>
+					<min>1.0</min>        
+					<max>1.0</max>
+				</pitchRange>      
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>	
+	<SoundDef>
+		<defName>CGF1_MWP_SFX_HLRW_Combine_SMG_Reload</defName>
+		<context>MapOnly</context>
+		<eventNames />  
+		<maxSimultaneous>1</maxSimultaneous>  
+		<subSounds>
+			<li>
+				<name>Shot</name>
+				<grains>
+					<li Class="AudioGrain_Clip">
+					<clipPath>Weapons_CGF1/HLRW/combine_smg_reload</clipPath>
+					</li>
+				</grains>      
+				<volumeRange>40</volumeRange>   
+				<pitchRange>
+					<min>1.0</min>        
+					<max>1.0</max>
+				</pitchRange>      
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	<SoundDef>
+		<defName>CGF1_MWP_SFX_HLRW_Combine_Shotgun_Reload</defName>
+		<context>MapOnly</context>
+		<eventNames />  
+		<maxSimultaneous>1</maxSimultaneous>  
+		<subSounds>
+			<li>
+				<name>Shot</name>
+				<grains>
+					<li Class="AudioGrain_Clip">
+					<clipPath>Weapons_CGF1/HLRW/combine_shotgun_cock</clipPath>
+					</li>
+				</grains>      
+				<volumeRange>40</volumeRange>   
+				<pitchRange>
+					<min>1.0</min>        
+					<max>1.0</max>
+				</pitchRange>      
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>	
+	
+	<!-- Gunshots -->
+	
+	<SoundDef>
+		<defName>CGF1_MWP_SFX_HLRW_Combine_AR1</defName>
+		<context>MapOnly</context>
+		<eventNames />  
+		<maxSimultaneous>1</maxSimultaneous>  
+		<subSounds>
+			<li>
+				<name>Shot</name>
+				<grains>
+					<li Class="AudioGrain_Clip">
+					<clipPath>Weapons_CGF1/HLRW/combine_ar1</clipPath>
+					</li>
+				</grains>      
+				<volumeRange>40</volumeRange>   
+				<pitchRange>
+					<min>1.0</min>        
+					<max>1.0</max>
+				</pitchRange>      
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>	
+	<SoundDef>
+		<defName>CGF1_MWP_SFX_HLRW_Combine_AR2</defName>
+		<context>MapOnly</context>
+		<eventNames />  
+		<maxSimultaneous>1</maxSimultaneous>  
+		<subSounds>
+			<li>
+				<name>Shot</name>
+				<grains>
+					<li Class="AudioGrain_Clip">
+					<clipPath>Weapons_CGF1/HLRW/combine_ar2</clipPath>
+					</li>
+				</grains>      
+				<volumeRange>40</volumeRange>   
+				<pitchRange>
+					<min>1.0</min>        
+					<max>1.0</max>
+				</pitchRange>      
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>	
+	<SoundDef>
+		<defName>CGF1_MWP_SFX_HLRW_Combine_AR2_GL</defName>
+		<context>MapOnly</context>
+		<eventNames />  
+		<maxSimultaneous>1</maxSimultaneous>  
+		<subSounds>
+			<li>
+				<name>Shot</name>
+				<grains>
+					<li Class="AudioGrain_Clip">
+					<clipPath>Weapons_CGF1/HLRW/combine_ar2_gl</clipPath>
+					</li>
+				</grains>      
+				<volumeRange>40</volumeRange>   
+				<pitchRange>
+					<min>0.9</min>        
+					<max>1.0</max>
+				</pitchRange>      
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	<SoundDef>
+		<defName>CGF1_MWP_SFX_HLRW_Combine_AR2_GL_Explode</defName>
+		<context>MapOnly</context>
+		<eventNames />  
+		<maxSimultaneous>1</maxSimultaneous>  
+		<subSounds>
+			<li>
+				<name>Shot</name>
+				<grains>
+					<li Class="AudioGrain_Clip">
+					<clipPath>Weapons_CGF1/HLRW/combine_ar2_gl_explode</clipPath>
+					</li>
+				</grains>      
+				<volumeRange>40</volumeRange>   
+				<pitchRange>
+					<min>0.9</min>        
+					<max>1.0</max>
+				</pitchRange>      
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	<SoundDef>
+		<defName>CGF1_MWP_SFX_HLRW_Combine_AR3</defName>
+		<context>MapOnly</context>
+		<eventNames />  
+		<maxSimultaneous>1</maxSimultaneous>  
+		<subSounds>
+			<li>
+				<name>Shot</name>
+				<grains>
+					<li Class="AudioGrain_Clip">
+					<clipPath>Weapons_CGF1/HLRW/combine_ar3</clipPath>
+					</li>
+				</grains>      
+				<volumeRange>40</volumeRange>   
+				<pitchRange>
+					<min>1.0</min>        
+					<max>1.0</max>
+				</pitchRange>      
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>	
+	<SoundDef>
+		<defName>CGF1_MWP_SFX_HLRW_Combine_Shotgun</defName>
+		<context>MapOnly</context>
+		<eventNames />  
+		<maxSimultaneous>1</maxSimultaneous>  
+		<subSounds>
+			<li>
+				<name>Shot</name>
+				<grains>
+					<li Class="AudioGrain_Clip">
+					<clipPath>Weapons_CGF1/HLRW/combine_shotgun</clipPath>
+					</li>
+				</grains>      
+				<volumeRange>40</volumeRange>   
+				<pitchRange>
+					<min>0.9</min>        
+					<max>1.0</max>
+				</pitchRange>      
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	<SoundDef>
+		<defName>CGF1_MWP_SFX_HLRW_Combine_Shotgun_Double</defName>
+		<context>MapOnly</context>
+		<eventNames />  
+		<maxSimultaneous>1</maxSimultaneous>  
+		<subSounds>
+			<li>
+				<name>Shot</name>
+				<grains>
+					<li Class="AudioGrain_Clip">
+					<clipPath>Weapons_CGF1/HLRW/combine_shotgun_double</clipPath>
+					</li>
+				</grains>      
+				<volumeRange>40</volumeRange>   
+				<pitchRange>
+					<min>0.9</min>        
+					<max>1.0</max>
+				</pitchRange>      
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	<SoundDef>
+		<defName>CGF1_MWP_SFX_HLRW_Combine_Shotgun_WH</defName>
+		<context>MapOnly</context>
+		<eventNames />  
+		<maxSimultaneous>1</maxSimultaneous>  
+		<subSounds>
+			<li>
+				<name>Shot</name>
+				<grains>
+					<li Class="AudioGrain_Clip">
+					<clipPath>Weapons_CGF1/HLRW/combine_shotgun_wh</clipPath>
+					</li>
+				</grains>      
+				<volumeRange>40</volumeRange>   
+				<pitchRange>
+					<min>0.9</min>        
+					<max>1.0</max>
+				</pitchRange>      
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	<SoundDef>
+		<defName>CGF1_MWP_SFX_HLRW_Combine_SMG</defName>
+		<context>MapOnly</context>
+		<eventNames />  
+		<maxSimultaneous>1</maxSimultaneous>  
+		<subSounds>
+			<li>
+				<name>Shot</name>
+				<grains>
+					<li Class="AudioGrain_Clip">
+					<clipPath>Weapons_CGF1/HLRW/combine_smg</clipPath>
+					</li>
+				</grains>      
+				<volumeRange>40</volumeRange>   
+				<pitchRange>
+					<min>1.0</min>        
+					<max>1.0</max>
+				</pitchRange>      
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	<SoundDef>
+		<defName>CGF1_MWP_SFX_HLRW_Combine_SMG1</defName>
+		<context>MapOnly</context>
+		<eventNames />  
+		<maxSimultaneous>1</maxSimultaneous>  
+		<subSounds>
+			<li>
+				<name>Shot</name>
+				<grains>
+					<li Class="AudioGrain_Clip">
+					<clipPath>Weapons_CGF1/HLRW/combine_smg1</clipPath>
+					</li>
+				</grains>      
+				<volumeRange>40</volumeRange>   
+				<pitchRange>
+					<min>0.9</min>        
+					<max>1.0</max>
+				</pitchRange>      
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	<SoundDef>
+		<defName>CGF1_MWP_SFX_HLRW_Combine_SMG1_Grenade</defName>
+		<context>MapOnly</context>
+		<eventNames />  
+		<maxSimultaneous>1</maxSimultaneous>  
+		<subSounds>
+			<li>
+				<name>Shot</name>
+				<grains>
+					<li Class="AudioGrain_Clip">
+					<clipPath>Weapons_CGF1/HLRW/combine_smg_grenade</clipPath>
+					</li>
+				</grains>      
+				<volumeRange>40</volumeRange>   
+				<pitchRange>
+					<min>0.9</min>        
+					<max>1.0</max>
+				</pitchRange>      
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	<SoundDef>
+		<defName>CGF1_MWP_SFX_HLRW_Combine_Sniper</defName>
+		<context>MapOnly</context>
+		<eventNames />  
+		<maxSimultaneous>1</maxSimultaneous>  
+		<subSounds>
+			<li>
+				<name>Shot</name>
+				<grains>
+					<li Class="AudioGrain_Clip">
+					<clipPath>Weapons_CGF1/HLRW/combine_sniper</clipPath>
+					</li>
+				</grains>      
+				<volumeRange>40</volumeRange>   
+				<pitchRange>
+					<min>0.9</min>        
+					<max>1.0</max>
+				</pitchRange>      
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	<SoundDef>
+		<defName>CGF1_MWP_SFX_HLRW_Combine_Suppressor</defName>
+		<context>MapOnly</context>
+		<eventNames />  
+		<maxSimultaneous>1</maxSimultaneous>  
+		<subSounds>
+			<li>
+				<name>Shot</name>
+				<grains>
+					<li Class="AudioGrain_Clip">
+					<clipPath>Weapons_CGF1/HLRW/combine_suppressor</clipPath>
+					</li>
+				</grains>      
+				<volumeRange>40</volumeRange>   
+				<pitchRange>
+					<min>1.0</min>        
+					<max>1.0</max>
+				</pitchRange>      
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	
+	<!-- Sustainers -->
+	
+	<SoundDef>
+		<defName>CGF1_MWP_SFX_HLRW_Combine_AR2_GL_Charge</defName>
+		<context>MapOnly</context>
+		<eventNames />  
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<maxSimultaneous>5</maxSimultaneous>
+		<sustain>true</sustain>
+		<subSounds>
+			<li>
+				<tempoAffectedByGameSpeed>false</tempoAffectedByGameSpeed>
+				<grains>
+					<li Class="AudioGrain_Clip">
+					<clipPath>Weapons_CGF1/HLRW/combine_ar2_gl_charge</clipPath>
+					</li>
+				</grains>      
+				<volumeRange>40</volumeRange>   
+				<pitchRange>
+					<min>1.0</min>        
+					<max>1.0</max>
+				</pitchRange>      
+			</li>
+		</subSounds>
+	</SoundDef>
+	<SoundDef>
+		<defName>CGF1_MWP_SFX_HLRW_Combine_AR2_GL_Loop</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<maxSimultaneous>5</maxSimultaneous>
+		<sustain>true</sustain>
+		<subSounds>
+			<li>
+				<tempoAffectedByGameSpeed>true</tempoAffectedByGameSpeed>
+				<grains>
+					<li Class="AudioGrain_Clip">
+					<clipPath>Weapons_CGF1/HLRW/combine_ar2_gl_loop</clipPath>
+					</li>
+				</grains>      
+				<volumeRange>30</volumeRange>   
+				<pitchRange>
+					<min>1.0</min>        
+					<max>1.0</max>
+				</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+	<SoundDef>
+		<defName>CGF1_MWP_SFX_HLRW_Combine_Suppressor_Warmup</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<maxSimultaneous>5</maxSimultaneous>
+		<sustain>true</sustain>
+		<subSounds>
+			<li>
+				<tempoAffectedByGameSpeed>true</tempoAffectedByGameSpeed>
+				<grains>
+					<li Class="AudioGrain_Clip">
+					<clipPath>Weapons_CGF1/HLRW/combine_suppressor_warmup</clipPath>
+					</li>
+				</grains>      
+				<volumeRange>40</volumeRange>   
+				<pitchRange>
+					<min>1.0</min>        
+					<max>1.0</max>
+				</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+</Defs>

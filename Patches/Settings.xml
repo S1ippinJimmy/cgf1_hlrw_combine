@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="VEF.PatchOperationToggableSequence">
+		<enabled>False</enabled>
+		<label>Combine Assassins use real world weapons</label>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef[defName="CGF1_HLRW_Combine_Assassin"]/weaponTags</xpath>
+				<value>
+					<li>CGF1_HLRW_Combine_Assassin</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	<Operation Class="VEF.PatchOperationToggableSequence">
+		<enabled>False</enabled>
+		<label>Combine Chargers use real world weapons</label>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef[defName="CGF1_HLRW_Combine_Charger"]/weaponTags</xpath>
+				<value>
+					<li>CGF1_HLRW_Combine_Charger</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	<Operation Class="VEF.PatchOperationToggableSequence">
+		<enabled>False</enabled>
+		<label>Combine Elites use real world weapons</label>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef[defName="CGF1_HLRW_Combine_Elite"]/weaponTags</xpath>
+				<value>
+					<li>CGF1_HLRW_Combine_Elite</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	<Operation Class="VEF.PatchOperationToggableSequence">
+		<enabled>False</enabled>
+		<label>Combine Grunts use real world weapons</label>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef[defName="CGF1_HLRW_Combine_Grunt"]/weaponTags</xpath>
+				<value>
+					<li>CGF1_HLRW_Combine_Grunt</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	<Operation Class="VEF.PatchOperationToggableSequence">
+		<enabled>False</enabled>
+		<label>Combine Ordinals use real world weapons</label>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef[defName="CGF1_HLRW_Combine_Ordinal"]/weaponTags</xpath>
+				<value>
+					<li>CGF1_HLRW_Combine_Ordinal</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	<Operation Class="VEF.PatchOperationToggableSequence">
+		<enabled>False</enabled>
+		<label>Combine Soldiers use real world weapons</label>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef[defName="CGF1_HLRW_Combine_Soldier"]/weaponTags</xpath>
+				<value>
+					<li>CGF1_HLRW_Combine_Soldier</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	<Operation Class="VEF.PatchOperationToggableSequence">
+		<enabled>False</enabled>
+		<label>Combine Shotgunners use real world weapons</label>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef[defName="CGF1_HLRW_Combine_Soldier_Shotgun"]/weaponTags</xpath>
+				<value>
+					<li>CGF1_HLRW_Combine_Soldier_Shotgun</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	<Operation Class="VEF.PatchOperationToggableSequence">
+		<enabled>False</enabled>
+		<label>Combine Snipers use real world weapons</label>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef[defName="CGF1_HLRW_Combine_Soldier_Sniper"]/weaponTags</xpath>
+				<value>
+					<li>CGF1_HLRW_Combine_Soldier_Sniper</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	<Operation Class="VEF.PatchOperationToggableSequence">
+		<enabled>False</enabled>
+		<label>Combine Suppressors use real world weapons</label>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef[defName="CGF1_HLRW_Combine_Suppressor"]/weaponTags</xpath>
+				<value>
+					<li>CGF1_HLRW_Combine_Suppressor</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	<Operation Class="VEF.PatchOperationToggableSequence">
+		<enabled>False</enabled>
+		<label>Metropolice use real world weapons</label>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef[defName="CGF1_HLRW_Combine_Metrocop"]/weaponTags</xpath>
+				<value>
+					<li>CGF1_HLRW_Combine_Metrocop</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+</Patch>

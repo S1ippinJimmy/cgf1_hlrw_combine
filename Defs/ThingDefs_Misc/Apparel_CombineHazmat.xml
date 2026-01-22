@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Combine Hazmat -->
+
+	<ThingDef ParentName="CGF1_HLRW_Combine_Apparel_Base">
+		<defName>CGF1_HLRW_Combine_Apparel_Hazmat_Helmet</defName>
+		<label>combine hazmat helmet</label>
+		<description>A standard issue Combine Hazmat helmet.</description>
+		<techLevel>Spacer</techLevel>
+		<graphicData>
+		  <texPath>CGF1/Apparel/Combine/Hazmat/Hazmat_Helm</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<uiIconScale>1.25</uiIconScale>
+		<statBases>
+			<WorkToMake>8000</WorkToMake>
+			<MaxHitPoints>350</MaxHitPoints>
+			<Mass>2</Mass>
+			<Flammability>0.1</Flammability>
+			<ArmorRating_Sharp>0.56</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.20</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.24</ArmorRating_Heat>
+			<Insulation_Cold>4</Insulation_Cold>
+			<Insulation_Heat>4</Insulation_Heat>
+			<EquipDelay>3</EquipDelay>
+		</statBases>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<researchPrerequisite>CGF1_HLRW_Research_BasicCombineArmor</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<equippedStatOffsets>
+			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">0.1</SlaveSuppressionOffset>
+			<ToxicEnvironmentResistance>0.95</ToxicEnvironmentResistance>
+			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.7</VacuumResistance>
+		</equippedStatOffsets>
+		<costList>
+			<Synthread>20</Synthread>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<apparel>
+		  <countsAsClothingForNudity>false</countsAsClothingForNudity>
+		  <bodyPartGroups>
+			<li>FullHead</li>
+		  </bodyPartGroups>
+		  <wornGraphicPath>CGF1/Apparel/Combine/Hazmat/Hazmat_Helm</wornGraphicPath>
+		  <layers>
+			<li>Overhead</li>
+		  </layers>
+		  <tags Inherit="False">
+			<li>CGF1_HLRW_CombineApparel</li>
+		  </tags>
+		  <defaultOutfitTags>
+			<li>Hazmat</li>
+		  </defaultOutfitTags>
+		</apparel>
+		<tradeTags Inherit="False">
+			<li>CGF1_HLRW_Combine_Armor</li>
+		</tradeTags>
+		<thingCategories>
+			<li>ArmorHeadgear</li>
+		</thingCategories>
+		<comps>
+			<li Class="CompProperties_Biocodable">
+				<biocodeOnEquip>False</biocodeOnEquip>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="CGF1_HLRW_Combine_Apparel_Base">
+		<defName>CGF1_HLRW_Combine_Apparel_Hazmat_Armor</defName>
+		<label>combine hazmat armor</label>
+		<description>A standard issue Combine Hazmat suit of armor.</description>
+		<techLevel>Spacer</techLevel>
+		<graphicData>
+		  <texPath>CGF1/Apparel/Combine/Hazmat/Hazmat</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<WorkToMake>12000</WorkToMake>
+			<MaxHitPoints>300</MaxHitPoints>
+			<Mass>10</Mass>
+			<Flammability>0.1</Flammability>
+			<ArmorRating_Sharp>0.56</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.20</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.24</ArmorRating_Heat>
+			<Insulation_Cold>30</Insulation_Cold>
+			<Insulation_Heat>15</Insulation_Heat>
+			<EquipDelay>10</EquipDelay>
+		</statBases>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<researchPrerequisite>CGF1_HLRW_Research_BasicCombineArmor</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<equippedStatOffsets>
+			<CleaningSpeed>0.25</CleaningSpeed>
+			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">0.1</SlaveSuppressionOffset>
+			<ToxicEnvironmentResistance>0.67</ToxicEnvironmentResistance>
+			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.4</VacuumResistance>
+		</equippedStatOffsets>
+		<costList>
+			<Synthread>60</Synthread>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<apparel>
+		  <countsAsClothingForNudity>true</countsAsClothingForNudity>
+		  <bodyPartGroups>
+			<li>Neck</li>
+			<li>Torso</li>
+			<li>Shoulders</li>
+			<li>Arms</li>
+			<li>Legs</li>
+		  </bodyPartGroups>
+		  <wornGraphicPath>CGF1/Apparel/Combine/Hazmat/Hazmat</wornGraphicPath>
+		  <layers>
+			<li>Middle</li>
+			<li>Shell</li>
+		  </layers>
+		  <tags Inherit="False">
+			<li>CGF1_HLRW_CombineApparel</li>
+		  </tags>
+		  <defaultOutfitTags>
+			<li>Hazmat</li>
+		  </defaultOutfitTags>
+		  <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+          <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+          <canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
+		</apparel>
+		<tradeTags Inherit="False">
+			<li>CGF1_HLRW_Combine_Armor</li>
+		</tradeTags>
+		<thingCategories>
+		  <li>ApparelArmor</li>
+		</thingCategories>
+		<comps>
+			<li Class="CompProperties_Biocodable">
+				<biocodeOnEquip>False</biocodeOnEquip>
+			</li>
+		</comps>
+	</ThingDef>
+	
+</Defs>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <XenotypeDef MayRequire="Ludeon.RimWorld.Biotech">
+    <defName>CGF1_HLRW_Xenotype_Transhuman</defName>
+    <label>transhuman</label>
+    <description>The result of substantial physical and mental alterations to baseline humans is the standard transhuman infantry unit of the Combine.\n\Soldiers are modified to produce battlefield capable combatants without the drawbacks of regular human soldiers; they are physically enhanced, feel reduced pain, and seemingly lack the ability to become emotionally attached (including having their memories wiped.)\n\ Further modifcations enhance their ability to interface with Combine technology.</description>
+    <descriptionShort>The result of substantial physical and mental alterations to baseline humans is the standard transhuman infantry unit of the Combine.</descriptionShort>
+    <iconPath>CGF1/Icon/Xenotype/Transhuman</iconPath>
+    <combatPowerFactor>1.0</combatPowerFactor>
+    <genes>
+      <li>Hair_BaldOnly</li>
+      <li>Beard_NoBeardOnly</li>
+      <li>Sterile</li>
+      <li>Body_Standard</li>
+      <li>MinTemp_SmallDecrease</li>
+      <li>MaxTemp_SmallIncrease</li>
+      <li>WoundHealing_SuperFast</li>
+      <li>Beauty_Ugly</li>
+      <!--<li>PsychicAbility_Deaf</li>
+      <li>ToxResist_Partial</li>
+      <li>ToxicEnvironmentResistance_Partial</li>-->
+      <li>Neversleep</li>
+	  <li>AptitudeTerrible_Cooking</li>
+      <li>AptitudeTerrible_Social</li>
+      <li>AptitudeTerrible_Plants</li>
+      <li>AptitudeTerrible_Artistic</li>
+      <li>AptitudeTerrible_Animals</li>
+      <li>AptitudeTerrible_Intellectual</li>
+      <li>Skin_SheerWhite</li>
+      <li>Pain_Reduced</li>
+      <li>Aggression_DeadCalm</li>
+    </genes>
+  </XenotypeDef>
+  
+  <XenotypeDef MayRequire="Ludeon.RimWorld.Biotech">
+    <defName>CGF1_HLRW_Xenotype_Transhuman_Exo</defName>
+    <label>transhuman exo</label>
+    <description>Taking the physical and mental alterations of the normal Combine augmentation process and upping them to 11 creates some of the Combine's most monstrous units.</description>
+    <descriptionShort>TTaking the physical and mental alterations of the normal Combine augmentation process and upping them to 11 creates some of the Combine's most monstrous units.</descriptionShort>
+    <iconPath>CGF1/Icon/Xenotype/Transhuman_Exo</iconPath>
+    <combatPowerFactor>1.00</combatPowerFactor>
+    <genes>
+      <li>Hair_BaldOnly</li>
+      <li>Beard_NoBeardOnly</li>
+      <li>Sterile</li>
+      <li>Body_Hulk</li>
+      <li>MinTemp_SmallDecrease</li>
+      <li>MaxTemp_SmallIncrease</li>
+      <li>WoundHealing_SuperFast</li>
+      <li>Beauty_Ugly</li>
+      <!--<li>PsychicAbility_Deaf</li>
+      <li>ToxResist_Partial</li>
+      <li>ToxicEnvironmentResistance_Partial</li>-->
+      <li>Neversleep</li>
+	  <li>AptitudeTerrible_Cooking</li>
+      <li>AptitudeTerrible_Social</li>
+      <li>AptitudeTerrible_Plants</li>
+      <li>AptitudeTerrible_Artistic</li>
+      <li>AptitudeTerrible_Animals</li>
+      <li>AptitudeTerrible_Intellectual</li>
+      <li>Skin_SheerWhite</li>
+      <li>Pain_Reduced</li>
+      <li>Unstoppable</li>
+      <li>Aggression_DeadCalm</li>
+    </genes>
+  </XenotypeDef>
+
+</Defs>

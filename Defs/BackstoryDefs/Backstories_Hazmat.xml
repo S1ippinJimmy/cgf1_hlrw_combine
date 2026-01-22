@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	
+	<!-- Hazmat -->
+
+	<BackstoryDef>
+		<defName>CGF1_HLRW_Backstory_CombineHazmat_ContainmentSweeper</defName>
+		<slot>Adulthood</slot>
+		<title>combine hazmat</title>
+		<titleShort>HZ</titleShort>
+		<baseDesc>When Xen growth burst through cracked foundations, someone had to go in first. [PAWN_nameDef] became a hazmat sweeper, sealing vents, burning spores, and dragging twitching debris into quarantine bins. The job taught them to breathe slowly and trust the suit more than luck.</baseDesc>
+		<requiredWorkTags>Violent</requiredWorkTags>
+		<spawnCategories>
+			<li>CGF1_HLRW_Backstory_CombineHazmat</li>
+		</spawnCategories>
+		<!--<bodyTypeGlobal>Male</bodyTypeGlobal>
+		<bodyTypeFemale>Male</bodyTypeFemale>
+		<bodyTypeMale>Male</bodyTypeMale>-->
+		<shuffleable>True</shuffleable>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>CGF1_HLRW_Backstory_CombineHazmat_ChemicalTrooper</defName>
+		<slot>Adulthood</slot>
+		<title>combine hazmat</title>
+		<titleShort>HZ</titleShort>
+		<baseDesc>Overwatch needed cleaners who could fight. [PAWN_nameDef] trained with sprayers and gas canisters, living a second life through poisoned hallways. They learned that most threats die the same way: isolate, saturate, and deny the air.</baseDesc>
+		<requiredWorkTags>Violent</requiredWorkTags>
+		<spawnCategories>
+			<li>CGF1_HLRW_Backstory_CombineHazmat</li>
+		</spawnCategories>
+		<!--<bodyTypeGlobal>Male</bodyTypeGlobal>
+		<bodyTypeFemale>Male</bodyTypeFemale>
+		<bodyTypeMale>Male</bodyTypeMale>-->
+		<shuffleable>True</shuffleable>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>CGF1_HLRW_Backstory_CombineHazmat_QuarantineWarden</defName>
+		<slot>Adulthood</slot>
+		<title>combine hazmat</title>
+		<titleShort>HZ</titleShort>
+		<baseDesc>[PAWN_nameDef] was assigned to quarantine duty, welding doors shut and enforcing exclusion lines while families screamed on the other side. Their mask hid the shame, but it could not muffle the sound.</baseDesc>
+		<requiredWorkTags>Violent</requiredWorkTags>
+		<spawnCategories>
+			<li>CGF1_HLRW_Backstory_CombineHazmat</li>
+		</spawnCategories>
+		<!--<bodyTypeGlobal>Male</bodyTypeGlobal>
+		<bodyTypeFemale>Male</bodyTypeFemale>
+		<bodyTypeMale>Male</bodyTypeMale>-->
+		<shuffleable>True</shuffleable>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>CGF1_HLRW_Backstory_CombineHazmat_TunnelDecon</defName>
+		<slot>Adulthood</slot>
+		<title>combine hazmat</title>
+		<titleShort>HZ</titleShort>
+		<baseDesc>[PAWN_nameDef] crawled through the world of service tunnels with a lamp, a detector, and a tank of neutralizer. They emerged coated in chemical frost and the quiet certainty that the surface was never truly clean.</baseDesc>
+		<requiredWorkTags>Violent</requiredWorkTags>
+		<spawnCategories>
+			<li>CGF1_HLRW_Backstory_CombineHazmat</li>
+		</spawnCategories>
+		<!--<bodyTypeGlobal>Male</bodyTypeGlobal>
+		<bodyTypeFemale>Male</bodyTypeFemale>
+		<bodyTypeMale>Male</bodyTypeMale>-->
+		<shuffleable>True</shuffleable>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>CGF1_HLRW_Backstory_CombineHazmat_BlackSiteDisposal</defName>
+		<slot>Adulthood</slot>
+		<title>combine hazmat</title>
+		<titleShort>HZ</titleShort>
+		<baseDesc>The Combine left experiments behind like trash. [PAWN_nameDef] was ordered to dispose of failed specimens, contaminated tools, and anything that moved when it should not. With time, they stopped flinching, and that frightened them more than the work ever did.</baseDesc>
+		<requiredWorkTags>Violent</requiredWorkTags>
+		<spawnCategories>
+			<li>CGF1_HLRW_Backstory_CombineHazmat</li>
+		</spawnCategories>
+		<!--<bodyTypeGlobal>Male</bodyTypeGlobal>
+		<bodyTypeFemale>Male</bodyTypeFemale>
+		<bodyTypeMale>Male</bodyTypeMale>-->
+		<shuffleable>True</shuffleable>
+	</BackstoryDef>
+
+</Defs>

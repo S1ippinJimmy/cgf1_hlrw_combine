@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<DesignatorDropdownGroupDef>
+		<defName>CGF1_HLRW_Dropdown_Combine_Barrier</defName>
+		<label>Combine Barrier</label>
+	</DesignatorDropdownGroupDef>
+	
+	<DesignatorDropdownGroupDef>
+		<defName>CGF1_HLRW_Dropdown_Combine_Terminal</defName>
+		<label>Combine Terminal</label>
+	</DesignatorDropdownGroupDef>
+	
+	<DesignatorDropdownGroupDef>
+		<defName>CGF1_HLRW_Dropdown_Forcefield_Door</defName>
+		<label>Forcefield Door</label>
+	</DesignatorDropdownGroupDef>
+	
+</Defs>

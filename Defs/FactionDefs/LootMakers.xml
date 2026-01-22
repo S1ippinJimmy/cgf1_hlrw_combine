@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingSetMakerDef>
+    <defName>CGF1_HLRW_Lootmaker_Combine</defName>
+    <root Class="ThingSetMaker_MarketValue">
+      <fixedParams>
+        <filter>
+          <thingDefs>
+            <li>ComponentSpacer</li>
+            <!--<li>CGF1_HLRW_Combine_Battery</li>-->
+            <li>CGF1_HLRW_Combine_DarkEnergyOrb</li>
+            <li>MealNutrientPaste</li>
+            <li>Plasteel</li>
+            <li>Synthread</li>
+          </thingDefs>
+        </filter>
+      </fixedParams>
+    </root>
+  </ThingSetMakerDef>
+
+</Defs>

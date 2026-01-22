@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>CGF1_HLRW_Combine_Heavy_Shotgun_</defName>
+		<label>Combine Heavy Shotgun</label>
+		<description>The standard issue pulse shotgun for the Wallhammer-class "Charger" units of the Combine overwatch. Packs a serious punch.</description>
+		<techLevel>Ultra</techLevel>
+		<graphicData>
+			<texPath>CGF1/Gun/Combine_Heavy_Shotgun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.00</drawSize>
+		</graphicData>
+		<soundInteract>CGF1_MWP_SFX_HLRW_Combine_Shotgun_Reload</soundInteract>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>8</Mass>
+			<AccuracyTouch>0.7</AccuracyTouch>
+			<AccuracyShort>0.67</AccuracyShort>
+			<AccuracyMedium>0.57</AccuracyMedium>
+			<AccuracyLong>0.54</AccuracyLong>
+			<RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>CGF1_HLRW_Research_PulseClassMunitions</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>FabricationBench</li>
+			</recipeUsers>
+			<displayPriority>200</displayPriority>
+		</recipeMaker>
+		<costList>
+			<CGF1_HLRW_Combine_Alloy>60</CGF1_HLRW_Combine_Alloy>
+			<CGF1_HLRW_Combine_DarkEnergyOrb>1</CGF1_HLRW_Combine_DarkEnergyOrb>
+		</costList>
+		<equippedAngleOffset>40</equippedAngleOffset>
+		<tradeTags>
+			<li>CGF1_HLRW_Combine_Guns</li>
+		</tradeTags>
+		<weaponTags Inherit="False">
+			<li>CGF1_HLRW_Combine_Shotgun_WH</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>CGF1_HLRW_Bullet_PulseRound_Shotgun</defaultProjectile>
+				<warmupTime>0.9</warmupTime>
+				<range>15.9</range>
+				<soundCast>CGF1_MWP_SFX_HLRW_Combine_Shotgun_WH</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<modExtensions>
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="issaczhuang.muzzleflash">
+				<def>MF_ChargedMuzzleFalsh</def>
+				<drawSize>(1.0,1.0)</drawSize>
+				<offsets>
+					<li>(0.48,0.05)</li>
+				</offsets>
+			</li>
+		</modExtensions>
+		<thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+	</ThingDef>
+	
+</Defs>

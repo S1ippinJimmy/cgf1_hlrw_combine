@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>CGF1_HLRW_Combine_OSIPR_Pistol_</defName>
+		<label>Combine OSIPR Pistol</label>
+		<description>One of two SMGs issued to the transhuman arm of the Combine Overwatch, a scaled down version of the AR1/AR2 platform.</description>
+		<techLevel>Ultra</techLevel>
+		<graphicData>
+			<texPath>CGF1/Gun/Combine_OSIPR_Pistol</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.95</drawSize>
+		</graphicData>
+		<soundInteract>CGF1_MWP_SFX_HLRW_Combine_AR2_Reload</soundInteract>
+		<statBases>
+			<WorkToMake>36000</WorkToMake>
+			<Mass>2.5</Mass>
+			<AccuracyTouch>0.8</AccuracyTouch>
+			<AccuracyShort>0.70</AccuracyShort>
+			<AccuracyMedium>0.40</AccuracyMedium>
+			<AccuracyLong>0.30</AccuracyLong>
+			<RangedWeapon_Cooldown>1.4</RangedWeapon_Cooldown>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>CGF1_HLRW_Research_PulseClassMunitions</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>FabricationBench</li>
+			</recipeUsers>
+			<displayPriority>200</displayPriority>
+		</recipeMaker>
+		<costList>
+			<CGF1_HLRW_Combine_Alloy>30</CGF1_HLRW_Combine_Alloy>
+			<CGF1_HLRW_Combine_DarkEnergyOrb>1</CGF1_HLRW_Combine_DarkEnergyOrb>
+		</costList>
+		<tradeTags>
+			<li>CGF1_HLRW_Combine_Guns</li>
+		</tradeTags>
+		<weaponTags Inherit="False">
+			<li>CGF1_HLRW_Combine_OSIPR_Pistol</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>CGF1_HLRW_Bullet_PulseRound_SMG</defaultProjectile>
+				<warmupTime>0.3</warmupTime>
+				<range>24.9</range>
+				<burstShotCount>2</burstShotCount>
+				<ticksBetweenBurstShots>9</ticksBetweenBurstShots>
+				<soundCast>CGF1_MWP_SFX_HLRW_Combine_SMG1</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<modExtensions>
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="issaczhuang.muzzleflash">
+				<def>MF_ChargedMuzzleFalsh</def>
+				<drawSize>(1.0,1.0)</drawSize>
+				<offsets>
+					<li>(0.36,0.09)</li>
+				</offsets>
+			</li>
+		</modExtensions>
+		<thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+	</ThingDef>
+	
+</Defs>

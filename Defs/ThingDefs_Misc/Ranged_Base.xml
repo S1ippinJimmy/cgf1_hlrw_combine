@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>CGF1_HLRW_Bullet_Combine_SMG</defName>
+		<label>SMG bullet</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>8</damageAmountBase>
+			<speed>48</speed>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>CGF1_MWP_Bullet_Combine_SMG_Grenade</defName>
+		<label>high explosive grenade</label>
+		<graphicData>
+			<texPath>CGF1/Projectile/SMG1_Grenade_Alt</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>0.77</drawSize>
+		</graphicData>
+		<thingClass>Projectile_Explosive</thingClass>
+		<projectile>
+			<damageDef>Bomb</damageDef>
+			<damageAmountBase>40</damageAmountBase>
+			<explosionRadius>1.9</explosionRadius>
+			<speed>50</speed>
+			<arcHeightFactor>0.7</arcHeightFactor>
+			<shadowSize>0.6</shadowSize>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>CGF1_MWP_Bullet_Combine_Ball</defName>
+		<label>combine ball</label>
+		<graphicData>
+			<texPath>CGF1/Projectile/CombineBall</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<thingClass>Projectile_Explosive</thingClass>
+		<category>Projectile</category>
+		<projectile>
+			<damageDef>EMP</damageDef>
+			<damageAmountBase>30</damageAmountBase>
+			<explosionRadius>2.9</explosionRadius>
+			<speed>45</speed>
+			<spinRate>10</spinRate>
+			<shadowSize>1</shadowSize>
+			<soundExplode>CGF1_MWP_SFX_HLRW_Combine_AR2_GL_Explode</soundExplode>
+			<!--<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>-->
+			<soundAmbient>CGF1_MWP_SFX_HLRW_Combine_AR2_GL_Loop</soundAmbient>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>CGF1_HLRW_Bullet_Combine_Shotgun</defName>
+		<label>Shotgun Blast</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Shotgun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>18</damageAmountBase>
+			<speed>65</speed>
+			<stoppingPower>3</stoppingPower>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>CGF1_HLRW_Bullet_Combine_Shotgun_Double</defName>
+		<label>Shotgun Blast</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Shotgun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.1</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>24</damageAmountBase>
+			<speed>65</speed>
+			<stoppingPower>3.5</stoppingPower>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>CGF1_HLRW_Bullet_PulseRound_Shotgun</defName>
+		<label>Pulse Blast</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Shotgun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>25</damageAmountBase>
+			<armorPenetrationBase>0.45</armorPenetrationBase>
+			<speed>65</speed>
+			<stoppingPower>3.5</stoppingPower>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>CGF1_HLRW_Bullet_PulseRound_SMG</defName>
+		<label>Pulse Round</label>
+		<graphicData>
+			<texPath>CGF1/Projectile/PulseRound</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(0.2, 0.9)</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>14</damageAmountBase>
+			<armorPenetrationBase>0.35</armorPenetrationBase>
+			<speed>93</speed>
+			<stoppingPower>1.5</stoppingPower>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>CGF1_HLRW_Bullet_PulseRound_AROne</defName>
+		<label>Pulse Round</label>
+		<graphicData>
+			<texPath>CGF1/Projectile/PulseRound</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(0.25, 1.1)</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>15</damageAmountBase>
+			<armorPenetrationBase>0.35</armorPenetrationBase>
+			<speed>100</speed>
+			<stoppingPower>1.5</stoppingPower>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>CGF1_HLRW_Bullet_PulseRound</defName>
+		<label>Pulse Round</label>
+		<graphicData>
+			<texPath>CGF1/Projectile/PulseRound</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(0.25, 1.1)</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>16</damageAmountBase>
+			<armorPenetrationBase>0.35</armorPenetrationBase>
+			<speed>93</speed>
+			<stoppingPower>1.5</stoppingPower>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>CGF1_HLRW_Bullet_PulseRound_Sniper</defName>
+		<label>Pulse Round</label>
+		<graphicData>
+			<texPath>CGF1/Projectile/PulseRound</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(0.25, 1.4)</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>35</damageAmountBase>
+			<armorPenetrationBase>0.35</armorPenetrationBase>
+			<speed>120</speed>
+			<stoppingPower>3</stoppingPower>
+		</projectile>
+	</ThingDef>
+	
+</Defs>

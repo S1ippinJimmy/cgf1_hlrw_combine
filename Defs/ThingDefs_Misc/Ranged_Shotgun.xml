@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>CGF1_HLRW_Combine_Shotgun_</defName>
+		<label>Combine Shotgun</label>
+		<description>The standard issue shotgun for close-quarters units of the Combine overwatch. Can fire two barrels at once for twice the power.</description>
+		<techLevel>Industrial</techLevel>
+		<graphicData>
+			<texPath>CGF1/Gun/Combine_Shotgun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.98</drawSize>
+		</graphicData>
+		<soundInteract>CGF1_MWP_SFX_HLRW_Combine_Shotgun_Reload</soundInteract>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>3.8</Mass>
+			<AccuracyTouch>0.82</AccuracyTouch>
+			<AccuracyShort>0.85</AccuracyShort>
+			<AccuracyMedium>0.75</AccuracyMedium>
+			<AccuracyLong>0.64</AccuracyLong>
+			<RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>GasOperation</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>FabricationBench</li>
+			</recipeUsers>
+			<displayPriority>200</displayPriority>
+		</recipeMaker>
+		<costList>
+			<Steel>60</Steel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+		</costList>
+		<equippedAngleOffset>40</equippedAngleOffset>
+		<tradeTags>
+			<li>CGF1_HLRW_Combine_Guns</li>
+		</tradeTags>
+		<weaponTags Inherit="False">
+			<li>CGF1_HLRW_Combine_Shotgun</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>CGF1_HLRW_Bullet_Combine_Shotgun</defaultProjectile>
+				<warmupTime>0.9</warmupTime>
+				<range>18.9</range>
+				<soundCast>CGF1_MWP_SFX_HLRW_Combine_Shotgun</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+				<label>Shotgun</label>
+				<commandIcon>CGF1/Gun/Combine_Shotgun</commandIcon>
+			</li>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>CGF1_HLRW_Bullet_Combine_Shotgun_Double</defaultProjectile>
+				<warmupTime>1.8</warmupTime>
+				<range>12.9</range>
+				<soundCast>CGF1_MWP_SFX_HLRW_Combine_Shotgun_Double</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>14</muzzleFlashScale>
+				<label>Double-Shot</label>
+				<commandIcon>CGF1/Underbarrel/Combine_Shotgun_Double</commandIcon>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<modExtensions>
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="issaczhuang.muzzleflash">
+				<def>MF_StandardMuzzleFalsh</def>
+				<drawSize>(0.9,1.2)</drawSize>
+				<offsets>
+					<li>(0.48,0.05)</li>
+				</offsets>
+			</li>
+		</modExtensions>
+		<comps>
+			<li Class="MVCF.Comps.CompProperties_VerbProps">
+				<compClass>MVCF.Comps.Comp_VerbProps</compClass>
+				<verbProps>
+					<li>
+						<label>Shotgun</label>
+						<canBeToggled>true</canBeToggled>
+						<separateToggle>false</separateToggle>
+					</li>
+					<li>
+						<label>Double-Shot</label>
+						<canBeToggled>true</canBeToggled>
+						<separateToggle>false</separateToggle>
+						<description>Fire both barrels of the shotgun at the same time for significantly extra damage. Due to the significant spread and recoil, this attack has a much shorter effective range.</description>
+					</li>
+				</verbProps>
+			</li>
+		</comps>
+		<thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+	</ThingDef>
+	
+</Defs>

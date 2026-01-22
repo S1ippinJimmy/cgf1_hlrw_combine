@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PawnKindDef>
+		<defName>CGF1_HLRW_Combine_Metrocop_Player</defName>
+		<label>metrocop</label>
+		<race>Human</race>
+		<combatPower>30</combatPower>
+		<defaultFactionDef>CGF1_HLRW_Faction_PlayerCombine</defaultFactionDef>
+		<isFighter>false</isFighter>
+		<itemQuality>Normal</itemQuality>
+		<gearHealthRange>1~1</gearHealthRange>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<apparelIgnorePollution MayRequire="Ludeon.RimWorld.Biotech">true</apparelIgnorePollution>
+		<forceNormalGearQuality>true</forceNormalGearQuality>
+		<initialWillRange>0~0</initialWillRange>
+		<initialResistanceRange>13~21</initialResistanceRange>
+		<backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+		<chemicalAddictionChance>0.00</chemicalAddictionChance>
+		<humanPregnancyChance>0.00</humanPregnancyChance>
+		<minGenerationAge>20</minGenerationAge>
+		<maxGenerationAge>50</maxGenerationAge>
+		<apparelTags>
+			<li>CGF1_HLRW_Combine_Generic</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>CGF1_HLRW_Combine_Apparel_Metrocop_Armor</li>
+			<li>CGF1_HLRW_Combine_Apparel_Metrocop_Helmet</li>
+		</apparelRequired>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>Outlander</li>
+					<li>CGF1_HLRW_Backstory_CivilProtection</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+		<skills>
+		  <li>
+			<skill>Shooting</skill>
+			<range>3~6</range>
+		  </li>
+		  <li>
+			<skill>Melee</skill>
+			<range>2~5</range>
+		  </li>
+		</skills>
+		<techHediffsChance>0.04</techHediffsChance>
+		<techHediffsMoney>500~700</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+			<li>Simple</li>
+		</techHediffsTags>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+	</PawnKindDef>
+
+	<PawnKindDef>
+		<defName>CGF1_HLRW_Combine_Soldier_Player</defName>
+		<label>soldier</label>
+		<race>Human</race>
+		<nameMaker>CGF1_HLRW_Namer_Combine_Soldier</nameMaker>
+		<combatPower>30</combatPower>
+		<defaultFactionDef>CGF1_HLRW_Faction_PlayerCombine</defaultFactionDef>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>CGF1_HLRW_Backstory_Combine_Transhuman</li>
+					<li>CGF1_HLRW_Backstory_Combine_Soldier</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<apparelTags>
+			<li>CGF1_HLRW_Combine_Generic</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>CGF1_HLRW_Combine_Apparel_Soldier_Armor</li>
+			<li>CGF1_HLRW_Combine_Apparel_Soldier_Helmet</li>
+			<li MayRequire="VanillaExpanded.VARME">VAE_Footwear_MarineBoots</li>
+			<li MayRequire="VanillaExpanded.VARME">VAE_Handwear_MarineGloves</li>
+		</apparelRequired>
+		<minGenerationAge>20</minGenerationAge>
+		<maxGenerationAge>50</maxGenerationAge>
+		<itemQuality>Normal</itemQuality>
+		<gearHealthRange>1~1</gearHealthRange>
+		<isFighter>false</isFighter>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<apparelIgnorePollution MayRequire="Ludeon.RimWorld.Biotech">true</apparelIgnorePollution>
+		<forceNormalGearQuality>true</forceNormalGearQuality>
+		<initialWillRange>0~0</initialWillRange>
+		<initialResistanceRange>13~21</initialResistanceRange>
+		<backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+		<chemicalAddictionChance>0.00</chemicalAddictionChance>
+		<humanPregnancyChance>0.00</humanPregnancyChance>
+		<techHediffsChance>1.0</techHediffsChance>
+		<techHediffsRequired>
+			<li>BionicEye</li>
+			<li>BionicEye</li>
+			<li>BionicEar</li>
+			<li>BionicEar</li>
+		</techHediffsRequired>
+		<disallowedTraits>
+			<li>Brawler</li>
+			<li>Nudist</li>
+			<li>Cannibal</li>
+			<!--<li>Abrasive</li>
+			<li>TooSmart</li>
+			<li>Greedy</li>
+			<li>Jealous</li>-->
+			<li>Ascetic</li>
+			<!--<li>AnnoyingVoice</li>-->
+			<!--<li>CreepyBreathing</li>-->
+			<li>Pyromaniac</li>
+			<li>Wimp</li>
+			<li>BodyPurist</li>
+			<li>DislikesMen</li>
+			<li>DislikesWomen</li>
+			<li>TorturedArtist</li>
+			<li>Gourmand</li>
+			<li>DrugDesire</li>
+			<!--<li>NaturalMood</li>
+			<li>Nerves</li>-->
+			<li>Neurotic</li>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">VTE_AbsentMinded</li>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">VTE_Eccentric</li>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">VTE_Perfectionist</li>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">VTE_Coward</li>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">VTE_Clumsy</li>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">VTE_HeavySleeper</li>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">VTE_Slob</li>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">VTE_AnimalLover</li>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">VTE_AnimalHater</li>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">VTE_BigBoned</li>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">VTE_Technophobe</li>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">VTE_Snob</li>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">VTE_Squeamish</li>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">VTE_Anxious</li>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">VTE_Insatiable</li>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">VTE_Prude</li>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">VTE_CouchPotato</li>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">VTE_CatPerson</li>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">VTE_DogPerson</li>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">VTE_Prodigy</li>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">VTE_Menagerist</li>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">VTE_ChildOfSea</li>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">VTE_ChildOfMountain</li>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">VTE_MadSurgeon</li>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">VTE_DrunkenMaster</li>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">VTE_Kleptomaniac</li>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">VTE_Stoner</li>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">VTE_Lush</li>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">VTE_Wanderlust</li>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">VTE_WorldWeary</li>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">VTE_RefinedPalate</li>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">VTE_Academian</li>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">VTE_Gastronomist</li>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">VTE_Ecologist</li>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">VTE_Tycoon</li>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">VTE_Schizoid</li>
+		</disallowedTraits>
+		<skills>
+		  <li>
+			<skill>Shooting</skill>
+			<range>4~12</range>
+		  </li>
+		</skills>
+	</PawnKindDef>
+
+	<PawnKindDef>
+		<defName>CGF1_HLRW_Combine_EliteDeserter_Player</defName>
+		<label>deserter</label>
+		<race>Human</race>
+		<nameMaker>CGF1_HLRW_Namer_Combine_Soldier</nameMaker>
+		<combatPower>30</combatPower>
+		<defaultFactionDef>CGF1_HLRW_Faction_PlayerCombine</defaultFactionDef>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>CGF1_HLRW_Backstory_Combine_Transhuman</li>
+					<li>CGF1_HLRW_Backstory_Combine_Elite</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<apparelTags>
+			<li>CGF1_HLRW_Combine_Generic</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>CGF1_HLRW_Combine_Apparel_Elite_Armor</li>
+			<li>CGF1_HLRW_Combine_Apparel_Elite_Helmet</li>
+			<li MayRequire="VanillaExpanded.VARME">VAE_Footwear_MarineBoots</li>
+			<li MayRequire="VanillaExpanded.VARME">VAE_Handwear_MarineGloves</li>
+		</apparelRequired>
+		<minGenerationAge>20</minGenerationAge>
+		<maxGenerationAge>50</maxGenerationAge>
+		<itemQuality>Normal</itemQuality>
+		<gearHealthRange>1~1</gearHealthRange>
+		<isFighter>false</isFighter>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<apparelIgnorePollution MayRequire="Ludeon.RimWorld.Biotech">true</apparelIgnorePollution>
+		<forceNormalGearQuality>true</forceNormalGearQuality>
+		<initialWillRange>0~0</initialWillRange>
+		<initialResistanceRange>13~21</initialResistanceRange>
+		<backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+		<chemicalAddictionChance>0.00</chemicalAddictionChance>
+		<humanPregnancyChance>0.00</humanPregnancyChance>
+		<techHediffsChance>1.0</techHediffsChance>
+		<techHediffsRequired>
+			<li>BionicEye</li>
+			<li>BionicEye</li>
+			<li>BionicEar</li>
+			<li>BionicEar</li>
+			<li>BionicSpine</li>
+			<li>BionicJaw</li>
+		</techHediffsRequired>
+		<skills>
+		  <li>
+			<skill>Shooting</skill>
+			<range>7~15</range>
+		  </li>
+		</skills>
+	</PawnKindDef>
+
+</Defs>

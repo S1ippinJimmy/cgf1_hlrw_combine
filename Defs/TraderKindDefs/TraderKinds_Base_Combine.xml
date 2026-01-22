@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<TraderKindDef>
+		<defName>CGF1_HLRW_TraderKind_Combine_Base</defName>
+		<faction>CGF1_HLRW_Faction_Combine</faction>
+			<stockGenerators>
+			
+				<li Class="StockGenerator_SingleDef">
+					<thingDef>Silver</thingDef>
+					<countRange>800~3000</countRange>
+				</li>
+				<li Class="StockGenerator_SingleDef">
+					<thingDef>ComponentIndustrial</thingDef>
+					<countRange>20~70</countRange>
+				</li>
+				<li Class="StockGenerator_SingleDef">
+					<thingDef>ComponentSpacer</thingDef>
+					<countRange>8~16</countRange>
+				</li>
+				<li Class="StockGenerator_SingleDef">
+					<thingDef>CGF1_HLRW_Combine_Alloy</thingDef>
+					<countRange>500~800</countRange>
+				</li>
+				<li Class="StockGenerator_SingleDef">
+					<thingDef>Steel</thingDef>
+					<countRange>500~800</countRange>
+				</li>
+				<li Class="StockGenerator_SingleDef">
+					<thingDef>Plasteel</thingDef>
+					<countRange>200~350</countRange>
+				</li>
+				<li Class="StockGenerator_SingleDef">
+					<thingDef>Uranium</thingDef>
+					<countRange>80~300</countRange>
+				</li>
+				<li Class="StockGenerator_SingleDef">
+					<thingDef>Synthread</thingDef>
+					<countRange>400~600</countRange>
+				</li>
+				<li Class="StockGenerator_SingleDef">
+					<thingDef>Hyperweave</thingDef>
+					<countRange>30~60</countRange>
+				</li>
+				<li Class="StockGenerator_SingleDef">
+					<thingDef>Neutroamine</thingDef>
+					<countRange>50~200</countRange>
+				</li>
+				<li Class="StockGenerator_SingleDef">
+					<thingDef>CGF1_HLRW_Combine_DarkEnergyOrb</thingDef>
+					<countRange>5~16</countRange>
+				</li>
+				<li Class="StockGenerator_SingleDef">
+					<thingDef>Chemfuel</thingDef>
+					<countRange>300~500</countRange>
+				</li>
+				<li Class="StockGenerator_SingleDef">
+					<thingDef>MedicineUltratech</thingDef>
+					<countRange>25~50</countRange>
+				</li>
+				<li Class="StockGenerator_SingleDef">
+					<thingDef>MedicineIndustrial</thingDef>
+					<countRange>45~75</countRange>
+				</li>
+				<li Class="StockGenerator_ReinforcedBarrels">
+					<countRange>1~4</countRange>
+				</li>
+				<li Class="StockGenerator_SingleDef">
+					<thingDef>Schematic</thingDef>
+					<countRange>1~1</countRange>
+				</li>
+				<li Class="StockGenerator_SingleDef">
+					<thingDef>MealSurvivalPack</thingDef>
+					<countRange>25~150</countRange>
+				</li>
+				
+				<li Class="StockGenerator_Tag">
+					<tradeTag>CGF1_HLRW_Combine_Guns</tradeTag>
+					<thingDefCountRange>3~8</thingDefCountRange>
+					<countRange>1~4</countRange>
+				</li>
+				<li Class="StockGenerator_Tag">
+					<tradeTag>CGF1_HLRW_Combine_Armor</tradeTag>
+					<thingDefCountRange>7~12</thingDefCountRange>
+					<countRange>3~5</countRange>
+				</li>
+
+				<!-- Genepack -->
+				<li MayRequire="Ludeon.RimWorld.Biotech" Class="StockGenerator_SingleDef">
+					<thingDef>Genepack</thingDef>
+					<countRange>1~4</countRange>
+				</li>
+				 <!-- Archite capsules -->
+				<li MayRequire="Ludeon.RimWorld.Biotech" Class="StockGenerator_SingleDef">
+					<thingDef>ArchiteCapsule</thingDef>
+					<countRange>-1~3</countRange>
+				</li>
+
+      <!-- Buying -->
+		<li Class="StockGenerator_BuyExpensiveSimple" />
+		<li Class="StockGenerator_BuyTradeTag"><tag>Bionic</tag></li>
+		<li Class="StockGenerator_BuyTradeTag"><tag>WeaponMelee</tag></li>
+		<li Class="StockGenerator_BuyTradeTag"><tag>WeaponRanged</tag></li>
+		<li Class="StockGenerator_BuyTradeTag"><tag>Artifact</tag></li>
+		<li Class="StockGenerator_BuyTradeTag"><tag>HiTechArmor</tag></li>
+		<li Class="StockGenerator_BuyTradeTag"><tag>Armor</tag></li>
+		<li Class="StockGenerator_BuyTradeTag"><tag>PsylinkNeuroformer</tag></li>
+		<li Class="StockGenerator_BuyTradeTag"><tag>UtilitySpecial</tag></li>
+		<li Class="StockGenerator_BuyTradeTag"><tag>CGF1_HLRW_Combine_Guns</tag></li>
+		<li Class="StockGenerator_BuyTradeTag"><tag>CGF1_HLRW_Combine_Armor</tag></li>
+		<li Class="StockGenerator_BuyTradeTag"><tag>CGF1_GunsGalore_NoSpawn</tag></li>
+		<li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly"><thingDef>Shell_Deadlife</thingDef></li>
+		<li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly"><thingDef>VoidSculpture</thingDef></li>
+		<li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly"><thingDef>Shard</thingDef></li>
+		<li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly"><thingDef>Bioferrite</thingDef></li>
+		<li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly"><thingDef>RevenantSpine</thingDef></li>
+
+    </stockGenerators>
+  </TraderKindDef>
+
+</Defs>

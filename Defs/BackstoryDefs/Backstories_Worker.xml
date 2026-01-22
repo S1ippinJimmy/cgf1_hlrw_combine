@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<BackstoryDef>
+		<defName>CGF1_HLRW_Backstory_CombineWorker_QuotaWelder</defName>
+		<slot>Adulthood</slot>
+		<title>combine worker</title>
+		<titleShort>CW</titleShort>
+		<baseDesc>Factories never stopped after the Seven Hour War. [PAWN_nameDef] was given a mask, a wrench, and a quota. Keeping Combine technology humming bought a few extra ration points, and slowly bought their silence.</baseDesc>
+		<requiredWorkTags>Violent</requiredWorkTags>
+		<spawnCategories>
+			<li>CGF1_HLRW_Backstory_CombineWorker</li>
+		</spawnCategories>
+		<!--<bodyTypeGlobal>Male</bodyTypeGlobal>
+		<bodyTypeFemale>Male</bodyTypeFemale>
+		<bodyTypeMale>Male</bodyTypeMale>-->
+		<shuffleable>True</shuffleable>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>CGF1_HLRW_Backstory_CombineWorker_RequisitionedMechanic</defName>
+		<slot>Adulthood</slot>
+		<title>combine worker</title>
+		<titleShort>CW</titleShort>
+		<baseDesc>After the occupation, [PAWN_nameDef] was assigned to fix and maintain equipment and machinery. The work was technical and thankness, but it paid.</baseDesc>
+		<requiredWorkTags>Violent</requiredWorkTags>
+		<spawnCategories>
+			<li>CGF1_HLRW_Backstory_CombineWorker</li>
+		</spawnCategories>
+		<!--<bodyTypeGlobal>Male</bodyTypeGlobal>
+		<bodyTypeFemale>Male</bodyTypeFemale>
+		<bodyTypeMale>Male</bodyTypeMale>-->
+		<shuffleable>True</shuffleable>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>CGF1_HLRW_Backstory_CombineWorker_IndenturedBuilder</defName>
+		<slot>Adulthood</slot>
+		<title>combine worker</title>
+		<titleShort>CW</titleShort>
+		<baseDesc>[PAWN_nameDef] signed on as reconstruction labor, then learned the fine print: relocation, indoctrination, and a collar code that followed them everywhere. They became efficient at building walls meant to cage the same population they came from.</baseDesc>
+		<requiredWorkTags>Violent</requiredWorkTags>
+		<spawnCategories>
+			<li>CGF1_HLRW_Backstory_CombineWorker</li>
+		</spawnCategories>
+		<!--<bodyTypeGlobal>Male</bodyTypeGlobal>
+		<bodyTypeFemale>Male</bodyTypeFemale>
+		<bodyTypeMale>Male</bodyTypeMale>-->
+		<shuffleable>True</shuffleable>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>CGF1_HLRW_Backstory_CombineWorker_FieldEngineer</defName>
+		<slot>Adulthood</slot>
+		<title>combine worker</title>
+		<titleShort>CW</titleShort>
+		<baseDesc>[PAWN_nameDef] acted as a dangerous field engineer, running cables through ruined basements, swapping power cores, and patching bio-mechanical conduits while alarms wailed overhead. Survival depended on being useful and never asking what the systems were for.</baseDesc>
+		<requiredWorkTags>Violent</requiredWorkTags>
+		<spawnCategories>
+			<li>CGF1_HLRW_Backstory_CombineWorker</li>
+		</spawnCategories>
+		<!--<bodyTypeGlobal>Male</bodyTypeGlobal>
+		<bodyTypeFemale>Male</bodyTypeFemale>
+		<bodyTypeMale>Male</bodyTypeMale>-->
+		<shuffleable>True</shuffleable>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>CGF1_HLRW_Backstory_CombineWorker_ConvertedRebel</defName>
+		<slot>Adulthood</slot>
+		<title>combine worker</title>
+		<titleShort>CW</titleShort>
+		<baseDesc>Captured during a raid, [PAWN_nameDef] was offered a choice between the cells and the tool belt. They chose the tool belt and were marched into maintenance crews under a new serial number.</baseDesc>
+		<requiredWorkTags>Violent</requiredWorkTags>
+		<spawnCategories>
+			<li>CGF1_HLRW_Backstory_CombineWorker</li>
+		</spawnCategories>
+		<!--<bodyTypeGlobal>Male</bodyTypeGlobal>
+		<bodyTypeFemale>Male</bodyTypeFemale>
+		<bodyTypeMale>Male</bodyTypeMale>-->
+		<shuffleable>True</shuffleable>
+	</BackstoryDef>
+
+</Defs>

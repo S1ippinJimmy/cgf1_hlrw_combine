@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<!-- Combine Wallhammer -->
+
+	<ThingDef ParentName="CGF1_HLRW_Combine_Apparel_Base">
+		<defName>CGF1_HLRW_Combine_Apparel_Wallhammer_Helmet</defName>
+		<label>combine wallhammer helmet</label>
+		<description>A standard issue Combine Wallhammer helmet.</description>
+		<techLevel>Spacer</techLevel>
+		<graphicData>
+		  <texPath>CGF1/Apparel/Combine/Wallhammer/Wallhammer_Helmet</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<uiIconScale>1.25</uiIconScale>
+		<statBases>
+			<WorkToMake>10000</WorkToMake>
+			<MaxHitPoints>350</MaxHitPoints>
+			<Mass>2</Mass>
+			<Flammability>0.3</Flammability>
+			<ArmorRating_Sharp>0.80</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.40</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.46</ArmorRating_Heat>
+			<Insulation_Cold>4</Insulation_Cold>
+			<Insulation_Heat>2</Insulation_Heat>
+			<EquipDelay>3</EquipDelay>
+		</statBases>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<researchPrerequisite>CGF1_HLRW_Research_BasicCombineArmor</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<equippedStatOffsets>
+			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">0.1</SlaveSuppressionOffset>
+			<ToxicEnvironmentResistance>0.67</ToxicEnvironmentResistance>
+			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.67</VacuumResistance>
+		</equippedStatOffsets>
+		<costList>
+			<Synthread>20</Synthread>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<apparel>
+		  <countsAsClothingForNudity>false</countsAsClothingForNudity>
+		  <bodyPartGroups>
+			<li>FullHead</li>
+		  </bodyPartGroups>
+		  <wornGraphicPath>CGF1/Apparel/Combine/Wallhammer/Wallhammer_Helmet</wornGraphicPath>
+		  <layers>
+			<li>Overhead</li>
+		  </layers>
+		  <tags Inherit="False">
+			<li>CGF1_HLRW_CombineApparel</li>
+		  </tags>
+		  <defaultOutfitTags>
+			<li>Soldier</li>
+		  </defaultOutfitTags>
+		</apparel>
+		<tradeTags Inherit="False">
+			<li>CGF1_HLRW_Combine_Armor</li>
+		</tradeTags>
+		<thingCategories>
+			<li>ArmorHeadgear</li>
+		</thingCategories>
+	</ThingDef>
+	
+	<ThingDef ParentName="CGF1_HLRW_Combine_Apparel_Base">
+		<defName>CGF1_HLRW_Combine_Apparel_Wallhammer_Armor</defName>
+		<label>combine wallhammer armor</label>
+		<description>A standard issue Combine Wallhammer suit of armor.</description>
+		<techLevel>Spacer</techLevel>
+		<graphicData>
+		  <texPath>CGF1/Apparel/Combine/Wallhammer/Wallhammer</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<MaxHitPoints>400</MaxHitPoints>
+			<Mass>18</Mass>
+			<Flammability>0.3</Flammability>
+			<ArmorRating_Sharp>1.06</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.48</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.54</ArmorRating_Heat>
+			<Insulation_Cold>38</Insulation_Cold>
+			<Insulation_Heat>12</Insulation_Heat>
+			<EquipDelay>14</EquipDelay>
+		</statBases>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<researchPrerequisite>CGF1_HLRW_Research_AdvancedCombineArmor</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.25</MoveSpeed>
+			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">0.1</SlaveSuppressionOffset>
+			<ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
+			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.3</VacuumResistance>
+		</equippedStatOffsets>
+		<costList>
+			<Synthread>110</Synthread>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<apparel>
+		  <countsAsClothingForNudity>true</countsAsClothingForNudity>
+		  <bodyPartGroups>
+			<li>Neck</li>
+			<li>Torso</li>
+			<li>Shoulders</li>
+			<li>Arms</li>
+			<li>Legs</li>
+		  </bodyPartGroups>
+		  <wornGraphicPath>CGF1/Apparel/Combine/Wallhammer/Wallhammer</wornGraphicPath>
+		  <layers>
+			<li>Middle</li>
+			<li>Shell</li>
+		  </layers>
+		  <tags Inherit="False">
+			<li>CGF1_HLRW_CombineApparel</li>
+		  </tags>
+		  <defaultOutfitTags>
+			<li>Soldier</li>
+		  </defaultOutfitTags>
+		  <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+          <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+          <canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
+		</apparel>
+		<tradeTags Inherit="False">
+			<li>CGF1_HLRW_Combine_Armor</li>
+		</tradeTags>
+		<thingCategories>
+		  <li>ApparelArmor</li>
+		</thingCategories>
+	</ThingDef>
+	
+</Defs>

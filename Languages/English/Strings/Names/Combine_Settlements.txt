@@ -1,0 +1,5 @@
+﻿Depot
+Fortress
+Gauntlet
+Outpost
+Post

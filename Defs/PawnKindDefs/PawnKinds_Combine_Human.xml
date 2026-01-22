@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Human Collaborator -->
+
+	<PawnKindDef Name="CGF1_HLRW_Combine_Collaborator_Base" Abstract="True">
+		<defaultFactionType>CGF1_HLRW_Faction_Combine</defaultFactionType>
+		<race>Human</race>
+		<isFighter>True</isFighter>
+		<minGenerationAge>20</minGenerationAge>
+		<maxGenerationAge>70</maxGenerationAge>
+		<chemicalAddictionChance>0.06</chemicalAddictionChance>
+		<itemQuality>Normal</itemQuality>
+		<gearHealthRange>1~1</gearHealthRange>
+		<apparelAllowHeadgearChance>1.0</apparelAllowHeadgearChance>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<initialWillRange>3~6</initialWillRange>
+		<initialResistanceRange>3~6</initialResistanceRange>
+		<disallowedTraits>
+			<li>Brawler</li>
+			<li>Nudist</li>
+		</disallowedTraits>
+	</PawnKindDef>
+	
+	<!-- Worker -->
+	
+	<PawnKindDef ParentName="CGF1_HLRW_Combine_Collaborator_Base">
+		<defName>CGF1_HLRW_Combine_Worker</defName>
+		<label>worker</label>
+		<isFighter>False</isFighter>
+		<apparelTags>
+			<li>CGF1_HLRW_Combine_Generic</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>CGF1_HLRW_Combine_Apparel_Worker_Armor</li>
+			<li>CGF1_HLRW_Combine_Apparel_Worker_Helmet</li>
+		</apparelRequired>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>Outlander</li>
+					<li>CGF1_HLRW_Backstory_CombineWorker</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<combatPower>45</combatPower>
+		<weaponMoney>0~0</weaponMoney>
+		<weaponTags Inherit="False"/>
+		<apparelMoney>2500~3500</apparelMoney>
+		<skills>
+		  <li>
+			<skill>Shooting</skill>
+			<range>6~8</range>
+		  </li>
+		</skills>
+		<techHediffsChance>0.04</techHediffsChance>
+		<techHediffsMoney>200~700</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+			<li>Simple</li>
+		</techHediffsTags>
+		<requiredWorkTags>
+			<li>ManualDumb</li>
+			<li>Mining</li>
+			<li>Crafting</li>
+			<li>Cooking</li>
+			<li>PlantWork</li>
+			<li>Constructing</li>
+		</requiredWorkTags>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="CGF1_HLRW_Combine_Collaborator_Base">
+		<defName>CGF1_HLRW_Combine_Hazmat</defName>
+		<label>hazmat</label>
+		<isFighter>False</isFighter>
+		<apparelTags>
+			<li>CGF1_HLRW_Combine_Generic</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>CGF1_HLRW_Combine_Apparel_Hazmat_Helmet</li>
+			<li>CGF1_HLRW_Combine_Apparel_Hazmat_Armor</li>
+		</apparelRequired>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>Outlander</li>
+					<li>CGF1_HLRW_Backstory_CombineHazmat</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<combatPower>45</combatPower>
+		<weaponMoney>0~0</weaponMoney>
+		<weaponTags Inherit="False"/>
+		<apparelMoney>2500~3500</apparelMoney>
+		<techHediffsChance>0.04</techHediffsChance>
+		<techHediffsMoney>200~700</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+			<li>Simple</li>
+		</techHediffsTags>
+		<requiredWorkTags>
+			<li>ManualDumb</li>
+			<li>Mining</li>
+			<li>Crafting</li>
+			<li>Constructing</li>
+		</requiredWorkTags>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="CGF1_HLRW_Combine_Collaborator_Base">
+		<defName>CGF1_HLRW_Combine_Metrocop</defName>
+		<label>metrocop</label>
+		<isFighter>true</isFighter>
+		<minGenerationAge>20</minGenerationAge>
+		<maxGenerationAge>50</maxGenerationAge>
+		<apparelTags>
+			<li>CGF1_HLRW_Combine_Generic</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>CGF1_HLRW_Combine_Apparel_Metrocop_Armor</li>
+			<li>CGF1_HLRW_Combine_Apparel_Metrocop_Helmet</li>
+		</apparelRequired>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>Outlander</li>
+					<li>CGF1_HLRW_Backstory_CivilProtection</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<combatPower>65</combatPower>
+		<weaponMoney>480~900</weaponMoney>
+		<weaponTags>
+			<li>CGF1_HLRW_Combine_SMG</li>
+		</weaponTags>
+		<apparelMoney>2500~3500</apparelMoney>
+		<skills>
+		  <li>
+			<skill>Shooting</skill>
+			<range>3~6</range>
+		  </li>
+		  <li>
+			<skill>Melee</skill>
+			<range>2~5</range>
+		  </li>
+		</skills>
+		<techHediffsChance>0.04</techHediffsChance>
+		<techHediffsMoney>500~700</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+			<li>Simple</li>
+		</techHediffsTags>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+	</PawnKindDef>
+
+	<!-- Administrator -->
+
+	<PawnKindDef>
+		<defName>CGF1_HLRW_Combine_Administrator</defName>
+		<label>administrator</label>
+		<defaultFactionType>CGF1_HLRW_Faction_Combine</defaultFactionType>
+		<race>Human</race>
+		<apparelTags>
+			<li>IndustrialMilitaryBasic</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>Apparel_BowlerHat</li>
+		</apparelRequired>
+		<minGenerationAge>27</minGenerationAge>
+		<maxGenerationAge>80</maxGenerationAge>
+		<chemicalAddictionChance>0.1</chemicalAddictionChance>
+		<combatPower>25</combatPower>
+		<isFighter>False</isFighter>
+		<itemQuality>Good</itemQuality>
+		<factionLeader>true</factionLeader>
+		<gearHealthRange>1~1</gearHealthRange>
+		<apparelMoney>500~600</apparelMoney>
+		<apparelAllowHeadgearChance>0.0</apparelAllowHeadgearChance>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<initialWillRange>10~75</initialWillRange>
+		<initialResistanceRange>7~75</initialResistanceRange>
+		<techHediffsChance>0.0</techHediffsChance>
+		<skills>
+		  <li>
+			<skill>Social</skill>
+			<range>6~9</range>
+		  </li>
+		</skills>
+	</PawnKindDef>
+
+
+</Defs>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<BackstoryDef>
+		<defName>CGF1_HLRW_Backstory_CivilProtection_Officer_FormerCop</defName>
+		<slot>Adulthood</slot>
+		<title>civil protection officer</title>
+		<titleShort>CP</titleShort>
+		<baseDesc>Once a regular city cop, [PAWN_nameDef] chose to align with the Combine to maintain peace and order. Conditioned to suppress rebellion with unyielding discipline, [PAWN_nameDef] wore the uniform as a symbol of stability, even if it meant silencing voices begging for freedom.</baseDesc>
+		<requiredWorkTags>Violent</requiredWorkTags>
+		<spawnCategories>
+			<li>CGF1_HLRW_Backstory_CivilProtection</li>
+		</spawnCategories>
+		<bodyTypeGlobal>Male</bodyTypeGlobal>
+		<bodyTypeFemale>Male</bodyTypeFemale>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<shuffleable>True</shuffleable>
+	</BackstoryDef>
+	
+	<BackstoryDef>
+		<defName>CGF1_HLRW_Backstory_CivilProtection_Officer_Reluctant</defName>
+		<slot>Adulthood</slot>
+		<title>civil protection officer</title>
+		<titleShort>CP</titleShort>
+		<baseDesc>[PAWN_nameDef] never wanted this life. Captured and coerced into service, [PAWN_possessive] patrolled the streets with heavy heart and heavier boots. Every call to enforce the Combine regime's harsh laws chipped away at their humanity, but the threat of punishment kept them silent and obedient.</baseDesc>
+		<requiredWorkTags>Violent</requiredWorkTags>
+		<spawnCategories>
+			<li>CGF1_HLRW_Backstory_CivilProtection</li>
+		</spawnCategories>
+		<bodyTypeGlobal>Male</bodyTypeGlobal>
+		<bodyTypeFemale>Male</bodyTypeFemale>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<shuffleable>True</shuffleable>
+	</BackstoryDef>
+	
+	<BackstoryDef>
+		<defName>CGF1_HLRW_Backstory_CivilProtection_Officer_Survivor</defName>
+		<slot>Adulthood</slot>
+		<title>civil protection officer</title>
+		<titleShort>CP</titleShort>
+		<baseDesc>When the world grew cold and empty, [PAWN_nameDef] saw the Civil Protection uniform as a ticket to survival. Not driven by belief, but by the promise of steady rations and shelter, they suppressed their doubts to keep food on the table.</baseDesc>
+		<requiredWorkTags>Violent</requiredWorkTags>
+		<spawnCategories>
+			<li>CGF1_HLRW_Backstory_CivilProtection</li>
+		</spawnCategories>
+		<bodyTypeGlobal>Male</bodyTypeGlobal>
+		<bodyTypeFemale>Male</bodyTypeFemale>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<shuffleable>True</shuffleable>
+	</BackstoryDef>
+	
+	<BackstoryDef>
+		<defName>CGF1_HLRW_Backstory_CivilProtection_Officer_Sadist</defName>
+		<slot>Adulthood</slot>
+		<title>civil protection officer</title>
+		<titleShort>CP</titleShort>
+		<baseDesc>[PAWN_nameDef] wielded the baton and pistol with the glee of a child breaking toys. The C.P. uniform became a license to punish, to humiliate, to remind the weak of their place, and that was a pleasure no one could take away.</baseDesc>
+		<requiredWorkTags>Violent</requiredWorkTags>
+		<spawnCategories>
+			<li>CGF1_HLRW_Backstory_CivilProtection</li>
+		</spawnCategories>
+		<bodyTypeGlobal>Male</bodyTypeGlobal>
+		<bodyTypeFemale>Male</bodyTypeFemale>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<shuffleable>True</shuffleable>
+	</BackstoryDef>
+	
+	<BackstoryDef>
+		<defName>CGF1_HLRW_Backstory_CivilProtection_Officer_Apathetic</defName>
+		<slot>Adulthood</slot>
+		<title>civil protection officer</title>
+		<titleShort>CP</titleShort>
+		<baseDesc>After the Seven Hour War, nothing mattered anymore. [PAWN_nameDef] walked the streets as a Metropolice officer because it’s just what they did. The uniform was just clothing, orders were just noise. How was it any different from jobs people worked in the old world? Inside, a hollow void waited for a reason to care.</baseDesc>
+		<requiredWorkTags>Violent</requiredWorkTags>
+		<spawnCategories>
+			<li>CGF1_HLRW_Backstory_CivilProtection</li>
+		</spawnCategories>
+		<bodyTypeGlobal>Male</bodyTypeGlobal>
+		<bodyTypeFemale>Male</bodyTypeFemale>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<shuffleable>True</shuffleable>
+	</BackstoryDef>
+
+</Defs>

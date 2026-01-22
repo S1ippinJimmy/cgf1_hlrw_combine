@@ -1,0 +1,428 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+
+	<ScenarioDef MayRequire="Ludeon.RimWorld.Biotech" ParentName="ScenarioBase">
+		<defName>CGF1_HLRW_Scenario_CombineOutpost</defName>
+		<label>Combine Outpost</label>
+		<description>Overwatch has commanded your unit to establish a remote outpost in hostile territory. You have been provided a limited amount of resources for the task.\n\nNote: Since you start hostile toward most factions, this is a difficult scenario.</description>
+		<scenario>
+			<summary>Three Combine units establishing an outpost.</summary>
+			<playerFaction>
+				<factionDef>CGF1_HLRW_Faction_PlayerCombine</factionDef>
+			</playerFaction>
+			<parts>
+
+				<!-- Config pages -->
+				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes">
+					<def>ConfigurePawnsXenotypes</def>
+					<pawnChoiceCount>5</pawnChoiceCount>
+					<customSummary>Start with three Combine soldiers.</customSummary>
+					<overrideKinds>
+						<li>
+							<xenotype>CGF1_HLRW_Xenotype_Transhuman</xenotype>
+							<pawnKind>CGF1_HLRW_Combine_Soldier_Player</pawnKind>
+						</li>
+					</overrideKinds>
+					<xenotypeCounts>
+						<li>
+							<xenotype>CGF1_HLRW_Xenotype_Transhuman</xenotype>
+							<count>3</count>
+							<description>Combine soldier</description>
+							<requiredAtStart>true</requiredAtStart>
+							<allowedDevelopmentalStages>Adult</allowedDevelopmentalStages>
+						</li>
+					</xenotypeCounts>
+				</li>
+				
+				<li Class="ScenPart_NoPossessions">
+					<def>NoPossessions</def>
+				</li>
+
+				<!-- Player starting stuff spawn method-->
+				<li Class="ScenPart_PlayerPawnsArriveMethod">
+					<def>PlayerPawnsArriveMethod</def>
+					<method>Standing</method>
+				</li>
+				
+				<li Class="ScenPart_StartingResearch">
+					<def>StartingResearch</def>
+					<project>CGF1_HLRW_Research_PulseClassMunitions</project>
+				</li>
+				<li Class="ScenPart_StartingResearch">
+					<def>StartingResearch</def>
+					<project>CGF1_HLRW_Research_BasicCombineArmor</project>
+				</li>
+				<li Class="ScenPart_StartingResearch">
+					<def>StartingResearch</def>
+					<project>CGF1_HLRW_Research_AdvancedCombineArmor</project>
+				</li>
+				<!--<li Class="ScenPart_StartingResearch">
+					<def>StartingResearch</def>
+					<project>CGF1_HLRW_Research_CombineStructures</project>
+				</li>
+				<li Class="ScenPart_StartingResearch">
+					<def>StartingResearch</def>
+					<project>CGF1_HLRW_Research_ForcefieldDoor</project>
+				</li>-->
+
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MealSurvivalPack</thingDef>
+					<count>30</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MedicineUltratech</thingDef>
+					<count>20</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Steel</thingDef>
+					<count>400</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Plasteel</thingDef>
+					<count>75</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>CGF1_HLRW_Combine_DarkEnergyOrb</thingDef>
+					<count>5</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Synthread</thingDef>
+					<count>225</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>CGF1_HLRW_Combine_Alloy</thingDef>
+					<count>400</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>ComponentIndustrial</thingDef>
+					<count>30</count>
+				</li>
+				
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>CGF1_HLRW_Combine_SMG1_</thingDef>
+					<count>2</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>CGF1_HLRW_Combine_Shotgun_</thingDef>
+				</li>
+				
+				<!--<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>CGF1_HLRW_Combine_Apparel_Soldier_Helmet</thingDef>
+					<count>2</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>CGF1_HLRW_Combine_Apparel_Soldier_Armor</thingDef>
+					<count>2</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>CGF1_HLRW_Combine_Apparel_Shotgunner_Helmet</thingDef>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>CGF1_HLRW_Combine_Apparel_Shotgunner_Armor</thingDef>
+				</li>-->
+				
+				<li Class="VEF.Factions.ScenPart_ForcedFactionGoodwill">
+					<factionDef>CGF1_HLRW_Faction_Combine</factionDef>
+					<affectHiddenFactions>True</affectHiddenFactions>
+					<affectStartingGoodwill>True</affectStartingGoodwill>
+					<startingGoodwillRange>100</startingGoodwillRange>
+					<affectNaturalGoodwill>True</affectNaturalGoodwill>
+					<naturalGoodwillRange>200~240</naturalGoodwillRange>
+					<def>VFEC_ForcedFactionGoodwill</def>
+				</li>
+				<li Class="VEF.Factions.ScenPart_ForcedFactionGoodwill">
+					<factionDef>OutlanderCivil</factionDef>
+					<alwaysHostile>True</alwaysHostile>
+					<def>VFEC_ForcedFactionGoodwill</def>
+				</li>
+				<li Class="VEF.Factions.ScenPart_ForcedFactionGoodwill">
+					<factionDef>OutlanderRough</factionDef>
+					<alwaysHostile>True</alwaysHostile>
+					<def>VFEC_ForcedFactionGoodwill</def>
+				</li>
+				<li Class="VEF.Factions.ScenPart_ForcedFactionGoodwill">
+					<factionDef>TribeCivil</factionDef>
+					<alwaysHostile>True</alwaysHostile>
+					<def>VFEC_ForcedFactionGoodwill</def>
+				</li>
+				<li Class="VEF.Factions.ScenPart_ForcedFactionGoodwill">
+					<factionDef>TribeRough</factionDef>
+					<alwaysHostile>True</alwaysHostile>
+					<def>VFEC_ForcedFactionGoodwill</def>
+				</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty" Class="VEF.Factions.ScenPart_ForcedFactionGoodwill">
+					<factionDef>Empire</factionDef>
+					<alwaysHostile>True</alwaysHostile>
+					<def>VFEC_ForcedFactionGoodwill</def>
+				</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology" Class="VEF.Factions.ScenPart_ForcedFactionGoodwill">
+					<factionDef>NudistTribe</factionDef>
+					<alwaysHostile>True</alwaysHostile>
+					<def>VFEC_ForcedFactionGoodwill</def>
+				</li>
+				<li MayRequire="Ludeon.RimWorld.Biotech" Class="VEF.Factions.ScenPart_ForcedFactionGoodwill">
+					<factionDef>TribeRoughNeanderthal</factionDef>
+					<alwaysHostile>True</alwaysHostile>
+					<def>VFEC_ForcedFactionGoodwill</def>
+				</li>
+				<li MayRequire="Ludeon.RimWorld.Biotech" Class="VEF.Factions.ScenPart_ForcedFactionGoodwill">
+					<factionDef>OutlanderRoughPig</factionDef>
+					<alwaysHostile>True</alwaysHostile>
+					<def>VFEC_ForcedFactionGoodwill</def>
+				</li>
+				<li MayRequire="Ludeon.RimWorld.Odyssey" Class="VEF.Factions.ScenPart_ForcedFactionGoodwill">
+					<factionDef>TradersGuild</factionDef>
+					<alwaysHostile>True</alwaysHostile>
+					<def>VFEC_ForcedFactionGoodwill</def>
+				</li>
+				<li MayRequire="cgf1.gunsgalore.x.runningunners" Class="VEF.Factions.ScenPart_ForcedFactionGoodwill">
+					<factionDef>CGF1_MWP_RunNGunners_Faction</factionDef>
+					<alwaysHostile>True</alwaysHostile>
+					<def>VFEC_ForcedFactionGoodwill</def>
+				</li>
+				<li MayRequire="OskarPotocki.VanillaFactionsExpanded.SettlersModule" Class="VEF.Factions.ScenPart_ForcedFactionGoodwill">
+					<factionDef>SettlerCivil</factionDef>
+					<alwaysHostile>True</alwaysHostile>
+					<def>VFEC_ForcedFactionGoodwill</def>
+				</li>
+				<li MayRequire="OskarPotocki.VanillaFactionsExpanded.SettlersModule" Class="VEF.Factions.ScenPart_ForcedFactionGoodwill">
+					<factionDef>SettlerRough</factionDef>
+					<alwaysHostile>True</alwaysHostile>
+					<def>VFEC_ForcedFactionGoodwill</def>
+				</li>
+				<li MayRequire="vanillaracesexpanded.saurid" Class="VEF.Factions.ScenPart_ForcedFactionGoodwill">
+					<factionDef>VRESaurids_OutlanderRoughSaurid</factionDef>
+					<alwaysHostile>True</alwaysHostile>
+					<def>VFEC_ForcedFactionGoodwill</def>
+				</li>
+
+				<!-- Game start dialog -->
+				<li Class="ScenPart_GameStartDialog">
+					<def>GameStartDialog</def>
+					<text>Overwatch has tasked your unit with establishing a remote outpost deep in hostile territory.\n\nAfter navigating treacherous ground, you’ve arrived at the designated location. Your orders are to secure the area, fortify your position, and prepare for prolonged operations without guaranteed resupply.\n\nEnemy presence is expected and constant; you’re not alone out here.</text>
+					<closeSound>GameStartSting</closeSound>
+				</li>
+
+			</parts>
+		</scenario>
+	</ScenarioDef>
+	
+	<ScenarioDef MayRequire="Ludeon.RimWorld.Biotech" ParentName="ScenarioBase">
+		<defName>CGF1_HLRW_Scenario_CivilProtectionOutpost</defName>
+		<label>Metropolice Outpost</label>
+		<description>The Combine ordered your Civil Protection unit to establish an outpost in hostile territory. You have been provided a limited amount of resources for the task.</description>
+		<scenario>
+			<summary>Five Civil Protection units establishing an outpost.</summary>
+			<playerFaction>
+				<factionDef>CGF1_HLRW_Faction_PlayerCombine</factionDef>
+			</playerFaction>
+			<parts>
+
+				<!-- Config pages -->
+				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes">
+					<def>ConfigurePawnsXenotypes</def>
+					<pawnChoiceCount>5</pawnChoiceCount>
+					<customSummary>Start with five Civil Protection units.</customSummary>
+					<overrideKinds>
+						<li>
+							<xenotype>Baseliner</xenotype>
+							<pawnKind>CGF1_HLRW_Combine_Metrocop_Player</pawnKind>
+						</li>
+					</overrideKinds>
+					<xenotypeCounts>
+						<li>
+							<xenotype>Baseliner</xenotype>
+							<count>5</count>
+							<description>Metropolice</description>
+							<requiredAtStart>true</requiredAtStart>
+							<allowedDevelopmentalStages>Adult</allowedDevelopmentalStages>
+						</li>
+					</xenotypeCounts>
+				</li>
+
+				<!-- Player starting stuff spawn method-->
+				<li Class="ScenPart_PlayerPawnsArriveMethod">
+					<def>PlayerPawnsArriveMethod</def>
+					<method>Standing</method>
+				</li>
+
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MealSurvivalPack</thingDef>
+					<count>50</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MedicineUltratech</thingDef>
+					<count>20</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Steel</thingDef>
+					<count>400</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Plasteel</thingDef>
+					<count>75</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Synthread</thingDef>
+					<count>225</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>CGF1_HLRW_Combine_Alloy</thingDef>
+					<count>200</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>ComponentIndustrial</thingDef>
+					<count>30</count>
+				</li>
+				
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>CGF1_HLRW_Combine_SMG1_</thingDef>
+					<count>1</count>
+				</li>
+				
+				<li Class="VEF.Factions.ScenPart_ForcedFactionGoodwill">
+					<factionDef>CGF1_HLRW_Faction_Combine</factionDef>
+					<affectHiddenFactions>True</affectHiddenFactions>
+					<affectStartingGoodwill>True</affectStartingGoodwill>
+					<startingGoodwillRange>100</startingGoodwillRange>
+					<affectNaturalGoodwill>True</affectNaturalGoodwill>
+					<naturalGoodwillRange>200~240</naturalGoodwillRange>
+					<def>VFEC_ForcedFactionGoodwill</def>
+				</li>
+				<!-- Game start dialog -->
+				<li Class="ScenPart_GameStartDialog">
+					<def>GameStartDialog</def>
+					<text>The Combine has tasked your metropolice unit with establishing a remote outpost.\n\nAfter navigating treacherous ground, you’ve arrived at the designated location. Your orders are to secure the area, fortify your position, and prepare for prolonged operations without guaranteed resupply.\n\nEnemy presence is expected and constant; you’re not alone out here.</text>
+					<closeSound>GameStartSting</closeSound>
+				</li>
+
+			</parts>
+		</scenario>
+	</ScenarioDef>
+  
+	<ScenarioDef MayRequire="Ludeon.RimWorld.Biotech" ParentName="ScenarioBase">
+		<defName>CGF1_HLRW_Scenario_CombineDeserter</defName>
+		<label>Entropy Zero</label>
+		<description>Deserting the Combine is almost unheard of. Yet somehow your conditioning broke, and you abandoned your unit in haste, bringing only what you had on you at the time. Now hunted and alone in hostile territory, survival is your only goal.\n\nNote: Since you start alone and with limited resources, this is a very difficult scenario.</description>
+		<scenario>
+			<summary>A lone deserter fleeing the Combine.</summary>
+			<playerFaction>
+				<factionDef>CGF1_HLRW_Faction_PlayerCombine</factionDef>
+			</playerFaction>
+			<parts>
+
+				<!-- Config pages -->
+				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes">
+					<def>ConfigurePawnsXenotypes</def>
+					<pawnChoiceCount>4</pawnChoiceCount>
+					<customSummary>Start with a single Combine elite.</customSummary>
+					<overrideKinds>
+						<li>
+							<xenotype>CGF1_HLRW_Xenotype_Transhuman</xenotype>
+							<pawnKind>CGF1_HLRW_Combine_EliteDeserter_Player</pawnKind>
+						</li>
+					</overrideKinds>
+					<xenotypeCounts>
+						<li>
+							<xenotype>CGF1_HLRW_Xenotype_Transhuman</xenotype>
+							<count>1</count>
+							<description>Combine elite</description>
+							<requiredAtStart>true</requiredAtStart>
+							<allowedDevelopmentalStages>Adult</allowedDevelopmentalStages>
+						</li>
+					</xenotypeCounts>
+				</li>
+				
+				<li Class="ScenPart_NoPossessions">
+					<def>NoPossessions</def>
+				</li>
+
+				<!-- Player starting stuff spawn method-->
+				<li Class="ScenPart_PlayerPawnsArriveMethod">
+					<def>PlayerPawnsArriveMethod</def>
+					<method>Standing</method>
+				</li>
+				
+				<li Class="ScenPart_StartingResearch">
+					<def>StartingResearch</def>
+					<project>CGF1_HLRW_Research_PulseClassMunitions</project>
+				</li>
+				<li Class="ScenPart_StartingResearch">
+					<def>StartingResearch</def>
+					<project>CGF1_HLRW_Research_BasicCombineArmor</project>
+				</li>
+				<li Class="ScenPart_StartingResearch">
+					<def>StartingResearch</def>
+					<project>CGF1_HLRW_Research_AdvancedCombineArmor</project>
+				</li>
+				<!--<li Class="ScenPart_StartingResearch">
+					<def>StartingResearch</def>
+					<project>CGF1_HLRW_Research_CombineStructures</project>
+				</li>
+				<li Class="ScenPart_StartingResearch">
+					<def>StartingResearch</def>
+					<project>CGF1_HLRW_Research_ForcefieldDoor</project>
+				</li>-->
+
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MealSurvivalPack</thingDef>
+					<count>5</count>
+				</li>
+				
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>CGF1_HLRW_Combine_OSIPR_AR2_</thingDef>
+				</li>
+				<!--<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>CGF1_HLRW_Combine_Apparel_Elite_Helmet</thingDef>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>CGF1_HLRW_Combine_Apparel_Elite_Armor</thingDef>
+				</li>-->
+				
+				
+				<li Class="VEF.Factions.ScenPart_ForcedFactionGoodwill">
+					<factionDef>CGF1_HLRW_Faction_Combine</factionDef>
+					<alwaysHostile>True</alwaysHostile>
+					<def>VFEC_ForcedFactionGoodwill</def>
+				</li>
+
+				<!-- Game start dialog -->
+				<li Class="ScenPart_GameStartDialog">
+					<def>GameStartDialog</def>
+					<text>No alarms sounded. No orders were given. One moment, you were a soldier. The next, a fugitive.\n\nYou slipped away with nothing but your rifle, your training, and a fractured memory of whoever you once were. A fledgling part of you ate away at your Combine conditioning until it led to your desertion, and now you're alone.\n\nTheir patrols are already searching. You’re surrounded by enemies and completely stripped of support. If you're going to survive, you'll need to act fast.</text>
+					<closeSound>GameStartSting</closeSound>
+				</li>
+
+			</parts>
+		</scenario>
+	</ScenarioDef>
+
+
+</Defs>

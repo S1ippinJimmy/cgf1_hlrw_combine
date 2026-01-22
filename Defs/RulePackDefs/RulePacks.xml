@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RulePackDef>
+		<defName>CGF1_HLRW_Namer_Combine_Settlement</defName>
+		<rulePack>
+		  <rulesStrings>
+			<li>r_name->[Combine_Settlements] [Combine_Numbers]</li>
+		  </rulesStrings>
+		   <rulesFiles>
+			<li>Combine_Settlements->Names/Combine_Settlements</li>
+			<li>Combine_Numbers->Names/Combine_Numbers</li>
+		  </rulesFiles>
+		</rulePack>
+	 </RulePackDef>
+	 
+	 <RulePackDef>
+		<defName>CGF1_HLRW_Namer_Combine_Soldier</defName>
+		<rulePack>
+		  <rulesStrings>
+			<li>r_name->[Combine_Designator_Soldier]-[Combine_Numbers][Combine_Numbers] [Combine_Numbers][Combine_Numbers][Combine_Numbers]</li>
+			<li>r_name->[Combine_Designator_Soldier]-[Combine_Numbers][Combine_Numbers] [Combine_Letters][Combine_Numbers][Combine_Numbers]</li>
+			<li>r_name->[Combine_Designator_Soldier]-[Combine_Numbers][Combine_Numbers] [Combine_Numbers][Combine_Numbers][Combine_Letters]</li>
+			<li>r_name->[Combine_Designator_Soldier]-[Combine_Numbers][Combine_Numbers][Combine_Numbers] [Combine_Numbers][Combine_Numbers][Combine_Numbers]</li>
+			<li>r_name->[Combine_Designator_Soldier]-[Combine_Numbers][Combine_Numbers][Combine_Numbers] [Combine_Numbers][Combine_Numbers][Combine_Numbers][Combine_Letters]</li>
+		  </rulesStrings>
+		   <rulesFiles>
+			<li>Combine_Designator_Soldier->Names/Combine_Designator_Soldier</li>
+			<li>Combine_Numbers->Names/Combine_Numbers</li>
+			<li>Combine_Letters->Names/Combine_Letters</li>
+		  </rulesFiles>
+		</rulePack>
+	 </RulePackDef>
+
+</Defs>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>CGF1_HLRW_Combine_OSIPR_AR1_</defName>
+		<label>Combine OSIPR AR1</label>
+		<description>The standard issue rifle of the transhuman arm of the Combine Overwatch, the Overwatch Standard Issue Pulse Rifle (OSIPR) is a fearsome weapon that mixes alien technology into a familiar design. The AR1 is an earlier, lighter model that was deployed in more limited quantities than the succeeding AR2.</description>
+		<techLevel>Ultra</techLevel>
+		<graphicData>
+			<texPath>CGF1/Gun/Combine_OSIPR_AR1</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.96</drawSize>
+		</graphicData>
+		<soundInteract>CGF1_MWP_SFX_HLRW_Combine_AR2_Reload</soundInteract>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>5.5</Mass>
+			<AccuracyTouch>0.65</AccuracyTouch>
+			<AccuracyShort>0.75</AccuracyShort>
+			<AccuracyMedium>0.65</AccuracyMedium>
+			<AccuracyLong>0.55</AccuracyLong>
+			<RangedWeapon_Cooldown>1.7</RangedWeapon_Cooldown>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>CGF1_HLRW_Research_PulseClassMunitions</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>FabricationBench</li>
+			</recipeUsers>
+			<displayPriority>200</displayPriority>
+		</recipeMaker>
+		<costList>
+			<CGF1_HLRW_Combine_Alloy>50</CGF1_HLRW_Combine_Alloy>
+			<CGF1_HLRW_Combine_DarkEnergyOrb>1</CGF1_HLRW_Combine_DarkEnergyOrb>
+		</costList>
+		<equippedAngleOffset>40</equippedAngleOffset>
+		<tradeTags>
+			<li>CGF1_HLRW_Combine_Guns</li>
+		</tradeTags>
+		<weaponTags Inherit="False">
+			<li>CGF1_HLRW_Combine_OSIPR_AR1</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>CGF1_HLRW_Bullet_PulseRound_AROne</defaultProjectile>
+				<warmupTime>0.9</warmupTime>
+				<range>30.9</range>
+				<burstShotCount>3</burstShotCount>
+				<ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+				<soundCast>CGF1_MWP_SFX_HLRW_Combine_AR2</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<modExtensions>
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="issaczhuang.muzzleflash">
+				<def>MF_ChargedMuzzleFalsh</def>
+				<drawSize>(1.0,1.0)</drawSize>
+				<offsets>
+					<li>(0.42,0.06)</li>
+				</offsets>
+			</li>
+		</modExtensions>
+		<thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+	</ThingDef>
+	
+</Defs>
